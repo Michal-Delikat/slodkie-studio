@@ -1,15 +1,28 @@
+/* Global styles */
+
+html {
+    --background-gray: rgb(245, 245, 245);
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
 h1, h2, h3 {
     font-family: 'Ephesis', cursive;
     margin: 0;
 }
 
-p {
-    font-family: "Josefin Sans", sans-serif;
-}
-
 h1 {
     font-size: 55px;
     font-weight: 400;
+}
+
+p {
+    font-family: "Josefin Sans", sans-serif;
 }
 
 ul {
@@ -25,25 +38,39 @@ a:focus {
   text-decoration: none;
 }
 
-body {
-    margin: 0;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
+button {
+    border: none;
+    background: none;
 }
 
+/* Header */
+
 .header {
-    text-align: center;
+    height: 42px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+    margin: 4px;
+    border-radius: 50%;
+    border: 1px solid slategray;
+}
+
+.header-title {
+    font-size: 28px;
 }
 
 .nav {
-    text-align: center;
-    
-}
-
-.nav-list {
-    list-style-type: none;
-    padding: 0;
+    width: 34px;
 }
 
 @media (min-width: 1040px) {
@@ -51,10 +78,36 @@ body {
         width: 50%;
         margin: 2vh auto;
     }
+}
 
+.nav-list {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-list.is-open {
+    padding-top: 12px;
+    display: block;
+    position: fixed;
+    top: 42px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: white;
+}
+
+@media (min-width: 1040px) {
     .nav-list {
         display: flex;
         justify-content: space-between;
+    }
+}
+
+@media (min-width: 1040px) { 
+    .menu-toggle {
+        display: none;
     }
 }
 
@@ -69,11 +122,28 @@ body {
     list-style: none;
 }
 
-.footer {
-    text-align: center;
+.menu-toggle i {
+  font-size: 1.5rem;
+  color: black;
 }
 
-.section {
+/* Footer */
+
+.footer {
     text-align: center;
-    padding: 3vh 5vw;
+    background-color: var(--background-gray);
+}
+
+/* Main */
+
+.section {
+    height: 512px;
+    margin-bottom: 16px;
+    background-color: var(--background-gray);
+    text-align: center;
+    padding: 49px 0;
+}
+
+.section-title {
+    font-size: 32px;
 }
