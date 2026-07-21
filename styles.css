@@ -122,6 +122,10 @@ button {
     list-style: none;
 }
 
+.menu-toggle {
+    padding-right: 12px;
+}
+
 .menu-toggle i {
   font-size: 1.5rem;
   color: black;
@@ -136,7 +140,12 @@ button {
 
 /* Main */
 
+.header-placeholder {
+    height: 42px;
+}
+
 .section {
+    box-sizing: border-box;
     height: 512px;
     margin-bottom: 16px;
     background-color: var(--background-gray);
@@ -146,4 +155,9 @@ button {
 
 .section-title {
     font-size: 32px;
+}
+
+.home-logo {
+    margin-bottom: 16px;
+    border-radius: 50%;
 }
