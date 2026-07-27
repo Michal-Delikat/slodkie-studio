@@ -196,6 +196,15 @@ button {
     margin-bottom: 16px;
     background-color: var(--background-gray);
     text-align: center;
+    padding: 49px;
+}
+
+
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
 }
 
 .hero-title {
@@ -206,11 +215,6 @@ button {
 .hero-subtitle {
     font-size: 32px;
     font-weight: 200;
-}
-
-#hero {
-    display: flex;
-    flex-direction: column;
 }
 
 .sub-section {
@@ -246,12 +250,9 @@ button {
 }
 
 @media (min-width: 800px) {
-    .section {
-        padding: 49px 0;
-    }
-
     #hero {
         flex-direction: row-reverse;
+        padding: 49px 0;
     }
 
     .sub-section {
