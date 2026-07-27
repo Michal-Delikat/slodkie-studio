@@ -1,19 +1,25 @@
-const btn = document.querySelector('.menu-toggle');
+const menuToggleButton = document.querySelector('.menu-toggle');
 const navList = document.querySelector('.nav-list');
+const orderButton = document.querySelector('.order-button');
+const header = document.querySelector('.header');
 
 const closeMenu = () => {
     navList.classList.remove('is-open');
-    btn.setAttribute('aria-expanded', 'false');
-    btn.querySelector('i').classList.replace('fa-xmark', 'fa-bars');
+    menuToggleButton.setAttribute('aria-expanded', 'false');
+    menuToggleButton.querySelector('i').classList.replace('fa-xmark', 'fa-bars');
 };
 
-btn.addEventListener('click', () => {
-    const isOpen = btn.getAttribute('aria-expanded') === 'true';
+menuToggleButton.addEventListener('click', () => {
+    const isOpen = menuToggleButton.getAttribute('aria-expanded') === 'true';
 
-    btn.setAttribute('aria-expanded', !isOpen);
-    btn.querySelector('i').classList.toggle('fa-bars');
-    btn.querySelector('i').classList.toggle('fa-xmark');
+    menuToggleButton.setAttribute('aria-expanded', !isOpen);
+    menuToggleButton.querySelector('i').classList.toggle('fa-bars');
+    menuToggleButton.querySelector('i').classList.toggle('fa-xmark');
     navList.classList.toggle('is-open');
+});
+
+orderButton.addEventListener('click', () => {
+    document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
 });
 
 navList.querySelectorAll('a').forEach(link => {

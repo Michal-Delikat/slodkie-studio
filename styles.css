@@ -13,6 +13,8 @@ html {
     --background-gray: rgb(245, 245, 245);
     --color-burgundy: #3D1020;
     --color-rose: #fed2da;
+    --color-black: black;
+    --color-white: white;
 
     scroll-padding-top: var(--header-height);
     scroll-behavior: smooth;
@@ -66,12 +68,13 @@ button {
     padding: 10px 28px;
     background: transparent;
     border: 1px solid var(--color-burgundy);
-    color: var(--color-burgundy);
+    color: var(--colorw-white);
+    background: var(--color-burgundy);
+    border-radius: 4px;
 }
 
 .button:hover {
-    background: var(--color-burgundy);
-    color: var(--color-rose);
+    background: var(--color-black);
 }
 
 /* Header */
@@ -193,7 +196,6 @@ button {
     margin-bottom: 16px;
     background-color: var(--background-gray);
     text-align: center;
-    padding: 60px 0;
 }
 
 .hero-title {
@@ -206,10 +208,9 @@ button {
     font-weight: 200;
 }
 
-#home {
+#hero {
     display: flex;
     flex-direction: column;
-    padding-top: 0;
 }
 
 .sub-section {
@@ -217,7 +218,18 @@ button {
 }
 
 .hero-left-column {
-    margin: 16px auto;
+    padding: 32px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    height: auto;
+}
+
+.hero-right-column {
+    max-height: 400px;
 }
 
 .hero-image {
@@ -234,13 +246,14 @@ button {
 }
 
 @media (min-width: 800px) {
-    #home {
-        flex-direction: row-reverse;
-        padding-top: 49px;
+    .section {
+        padding: 49px 0;
     }
-}
 
-@media (min-width: 800px) {
+    #hero {
+        flex-direction: row-reverse;
+    }
+
     .sub-section {
         width: 50%;
     }
