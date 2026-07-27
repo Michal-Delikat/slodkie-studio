@@ -11,6 +11,9 @@ html {
     --background-gray: rgb(245, 245, 245);
     --ff: "Josefin Sans", sans-serif;
     --header-height: 60px;
+
+    scroll-padding-top: var(--header-height);
+    scroll-behavior: smooth;
 }
 
 body {
@@ -169,7 +172,7 @@ button {
     margin-bottom: 16px;
     background-color: var(--background-gray);
     text-align: center;
-    padding: 49px 0;
+    padding: 60px 0;
 }
 
 .hero-title {
