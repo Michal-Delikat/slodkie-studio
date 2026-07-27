@@ -12,7 +12,7 @@ html {
     --header-height: 60px;
     --background-gray: rgb(245, 245, 245);
     --color-burgundy: #3D1020;
-    --color-rose: #E8BEC6;
+    --color-rose: #fed2da;
 
     scroll-padding-top: var(--header-height);
     scroll-behavior: smooth;
@@ -84,6 +84,7 @@ button {
     position: fixed;
     top: 0;
     left: 0;
+    background-color: var(--color-rose);
 }
 
 .inner-header {
@@ -108,7 +109,7 @@ button {
     height: 32px;
     margin: 4px;
     border-radius: 50%;
-    border: 1px solid slategray;
+    border: 1px solid var(--color-burgundy);
 }
 
 .header-title {
@@ -128,7 +129,7 @@ button {
     padding: 0;
     height: 0;
     text-align: center;
-    background-color: white;
+    background-color: var(--color-rose);
     overflow: hidden;
     transition: height 0.4s ease; 
 }
@@ -147,7 +148,7 @@ button {
 .nav-list > * > a {
     text-decoration: none;
     list-style: none;
-    color: hsl(0, 0%, 40%);
+    color: var(--color-burgundy);
     transition: color 0.1s;
 }
 
@@ -169,7 +170,7 @@ button {
 
 .menu-toggle i {
   font-size: 1.5rem;
-  color: black;
+  color: var(--color-burgundy);
 }
 
 /* Footer */
