@@ -34,7 +34,9 @@ h1, h2, h3 {
     font-family: var(--ff-primary);
 }
 
-
+p {
+    font-family: var(--ff-secondary);
+}
 
 a,
 a:hover,
@@ -168,13 +170,6 @@ button {
   color: var(--color-burgundy);
 }
 
-/* Footer */
-
-.footer {
-    text-align: center;
-    background-color: var(--background-gray);
-}
-
 /* Main */
 
 .header-placeholder {
@@ -182,20 +177,29 @@ button {
 }
 
 .section {
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
     height: auto;
     min-height: 512px;
     margin-bottom: 16px;
     background-color: var(--background-gray);
     text-align: center;
-    padding: 49px;
+    padding: 32px;
 }
 
+.section-title {
+    margin-bottom: 32px;
+    font-size: 32px;
+    font-weight: 400;
+}
 
+.sub-section {
+    box-sizing: border-box;
+    width: 100%;
+}
 
 #hero {
-    display: flex;
-    flex-direction: column;
     padding: 0;
 }
 
@@ -211,10 +215,6 @@ button {
     font-weight: 400;
 }
 
-.sub-section {
-    width: 100%;
-}
-
 .hero-left-column {
     padding: 32px 0;
     display: flex;
@@ -224,6 +224,7 @@ button {
 
 .wrapper {
     height: auto;
+    margin: 0 32px;
 }
 
 .hero-right-column {
@@ -239,18 +240,68 @@ button {
     margin: 32px;
 }
 
+/* About me section */
+
+.about-me-photo {
+    max-width: 400px;
+}
+
+.about-me-right-column {
+    padding: 32px;
+}
+
+.about-me-right-column > * {
+    text-align: left;
+}
+
+.about-me-paragraph {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    color: #4a3a3d;
+    margin-bottom: 16px;
+}
+
+/* Footer */
+
+.footer {
+    text-align: center;
+    background-color: var(--background-gray);
+}
+
 .copyright {
     margin: 16px auto;
 }
 
 @media (min-width: 800px) {
+    .section {
+        flex-direction: row;
+    }
+
     #hero {
         flex-direction: row-reverse;
         padding: 49px 0;
     }
 
-    .sub-section {
-        width: 50%;
+    #about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "title title"
+            "photo text";
+    }
+
+    .section-title {
+        grid-area: title;
+    }
+
+    .about-me-left-column {
+        grid-area: photo;
+    }
+
+    .about-me-right-column {
+        grid-area: text;
     }
 }
 
