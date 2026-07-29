@@ -10,14 +10,18 @@
 }
 
 html {
+    --header-height: 60px;
+
     --ff-primary: "Gabarito", sans-serif;
     --ff-secondary: "Josefin Sans", sans-serif;
-    --header-height: 60px;
-    --background-gray: rgb(245, 245, 245);
+
     --color-burgundy: #3D1020;
     --color-rose: #fed2da;
     --color-black: black;
     --color-white: white;
+
+    --background-gray: rgb(245, 245, 245);
+    --background-opaque-rose: rgb(254, 210, 218, 0.5);
 
     scroll-padding-top: var(--header-height);
     scroll-behavior: smooth;
@@ -176,7 +180,6 @@ button {
 }
 
 .section {
-    display: grid;
     box-sizing: border-box;
     height: auto;
     min-height: 512px;
@@ -184,6 +187,12 @@ button {
     background-color: var(--background-gray);
     text-align: center;
     padding: 32px 0;
+}
+
+.inner-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
 }
 
 .section-title {
@@ -221,9 +230,9 @@ button {
         padding: 32px 2vw;
     }
 
-    .sub-section {
+    /* .sub-section {
         width: 48vw;
-    }
+    } */
 }
 
 @media (min-width: 1040px) {
