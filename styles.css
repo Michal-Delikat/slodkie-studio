@@ -60,7 +60,6 @@ button {
     cursor: pointer;
     transition: all 0.25s ease;
     padding: 14px 32px;
-    background: transparent;
     border: 1px solid var(--color-burgundy);
     color: var(--color-white);
     background: var(--color-burgundy);
@@ -177,18 +176,18 @@ button {
 }
 
 .section {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     box-sizing: border-box;
     height: auto;
     min-height: 512px;
     margin-bottom: 16px;
     background-color: var(--background-gray);
     text-align: center;
-    padding: 32px;
+    padding: 2vw;
 }
 
 .section-title {
+    font-family: var(--ff-secondary);
     margin-bottom: 32px;
     font-size: 32px;
     font-weight: 400;
@@ -196,51 +195,17 @@ button {
 
 .sub-section {
     box-sizing: border-box;
-    width: 100%;
-}
-
-#hero {
-    padding: 0;
-}
-
-.hero-title {
-    font-size: 46px;
-    font-weight: 700;
-    margin: 12px auto;
-}
-
-.hero-subtitle {
-    font-family: var(--ff-secondary);
-    font-size: 32px;
-    font-weight: 400;
-}
-
-.hero-left-column {
-    padding: 32px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.wrapper {
-    height: auto;
-    margin: 0 32px;
-}
-
-.hero-right-column {
-    max-height: 400px;
-}
-
-.hero-image {
-    width: 100%;
-    max-width: 400px;
-}
-
-.order-button {
-    margin: 32px;
 }
 
 /* About me section */
+
+#about {
+    grid-template-areas: 
+        "title"
+        "photo"
+        "text";
+    /* background-color: var(--color-rose); */
+}
 
 .about-me-photo {
     max-width: 400px;
@@ -261,6 +226,8 @@ button {
     letter-spacing: 0.03em;
     color: #4a3a3d;
     margin-bottom: 16px;
+    padding-left: 16px;
+    border-left: 2px solid var(--color-rose);
 }
 
 /* Footer */
@@ -275,17 +242,11 @@ button {
 }
 
 @media (min-width: 800px) {
-    .section {
-        flex-direction: row;
-    }
-
-    #hero {
-        flex-direction: row-reverse;
-        padding: 49px 0;
+    .sub-section {
+        width: 48vw;
     }
 
     #about {
-        display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             "title title"

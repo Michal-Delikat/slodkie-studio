@@ -1,0 +1,63 @@
+/* Hero section */
+
+#hero {
+    grid-template-areas:
+        "photo"
+        "text";
+    padding: 0;
+}
+
+.hero-title {
+    font-size: 46px;
+    font-weight: 700;
+    margin: 12px auto;
+}
+
+.hero-subtitle {
+    font-family: var(--ff-secondary);
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.hero-left-column {
+    padding: 32px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    height: auto;
+    margin: 0 32px;
+}
+
+.hero-right-column {
+    max-height: 400px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.order-button {
+    margin-top: 32px;
+}
+
+@media (min-width: 800px) {
+    #hero {
+        grid-template-areas: 
+            "text photo";
+        padding: 2vw;
+    }
+
+    .hero-left-column {
+        grid-area: text
+    }
+
+    .hero-right-column {
+        max-height: 550px;
+        grid-area: photo;
+    }
+}
