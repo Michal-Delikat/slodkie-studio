@@ -183,7 +183,7 @@ button {
     margin-bottom: 16px;
     background-color: var(--background-gray);
     text-align: center;
-    padding: 2vw;
+    padding: 32px 0;
 }
 
 .section-title {
@@ -195,39 +195,6 @@ button {
 
 .sub-section {
     box-sizing: border-box;
-}
-
-/* About me section */
-
-#about {
-    grid-template-areas: 
-        "title"
-        "photo"
-        "text";
-    /* background-color: var(--color-rose); */
-}
-
-.about-me-photo {
-    max-width: 400px;
-}
-
-.about-me-right-column {
-    padding: 32px;
-}
-
-.about-me-right-column > * {
-    text-align: left;
-}
-
-.about-me-paragraph {
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 1.9;
-    letter-spacing: 0.03em;
-    color: #4a3a3d;
-    margin-bottom: 16px;
-    padding-left: 16px;
-    border-left: 2px solid var(--color-rose);
 }
 
 /* Footer */
@@ -242,27 +209,12 @@ button {
 }
 
 @media (min-width: 800px) {
+    .section {
+        padding: 32px 2vw;
+    }
+
     .sub-section {
         width: 48vw;
-    }
-
-    #about {
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "title title"
-            "photo text";
-    }
-
-    .section-title {
-        grid-area: title;
-    }
-
-    .about-me-left-column {
-        grid-area: photo;
-    }
-
-    .about-me-right-column {
-        grid-area: text;
     }
 }
 
