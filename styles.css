@@ -193,6 +193,14 @@ button {
     font-weight: 400;
 }
 
+.section-title {
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 0.06em;
+    color: #3D1020;
+    margin-bottom: 32px;
+}
+
 .sub-section {
     box-sizing: border-box;
 }
