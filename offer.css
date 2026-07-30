@@ -1,5 +1,5 @@
 #offer {
-    background-color: var(--background-opaque-rose);
+    background-color: var(--color-rose);
 }
 
 .offer-inner-section {
@@ -17,12 +17,10 @@
 
 .offer-left-column {
     grid-area: left-column;
-    /* border-right: 1px solid var(--color-rose); */
 }
 
 .offer-right-column {
     grid-area: right-column;
-    /* border-left: 1px solid var(--color-rose); */
 }
 
 .offer-sub-section-title {
@@ -46,7 +44,6 @@
     letter-spacing: 0.03em;
     text-align: left;
     color: var(--color-burgundy);
-    border-left: 2px solid var(--color-rose);
 }
 
 @media (min-width: 800px) {

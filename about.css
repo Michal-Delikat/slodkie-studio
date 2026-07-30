@@ -32,7 +32,6 @@
     letter-spacing: 0.03em;
     margin-bottom: 16px;
     padding-left: 16px;
-    border-left: 2px solid var(--color-rose);
 }
 
 @media (min-width: 800px) {
