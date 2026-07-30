@@ -3,7 +3,6 @@
 }
 
 .offer-inner-section {
-    max-width: 1300px;
     grid-template-areas: 
         "title"
         "left-column"

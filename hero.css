@@ -1,10 +1,12 @@
 /* Hero section */
 
 #hero {
-    /* min-height: clamp(500px, 100vh - var(--header-height), 900px); */
     padding: 0;
-    /* background-image: url('https://res.cloudinary.com/bmbhnvsi/image/upload/v1785323398/tort5_jgc7j7.jpg'); */
     background: var(--color-rose);
+}
+
+.hero-inner-section {
+    padding: 0;
 }
 
 .hero-image {
@@ -21,8 +23,9 @@
 }
 
 .hero-subtitle {
-    font-family: var(--ff-primary);
+    font-family: var(--ff-secondary);
     font-size: 28px;
+    font-weight: 300;
     color: var(--color-burgundy);
 }
 
@@ -47,10 +50,10 @@
 @media (min-width: 800px) {
     #hero {
         flex-direction: row-reverse;
-        padding: 32px 0;
     }
-
+    
     .hero-inner-section {
+        padding: 32px 0;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
             "text photo";

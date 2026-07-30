@@ -48,7 +48,6 @@
 
     .about-me-left-column {
         grid-area: photo;
-        max-height: 550px;
     }
 
     .about-me-right-column {

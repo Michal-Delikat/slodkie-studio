@@ -192,17 +192,16 @@ button {
 .section {
     box-sizing: border-box;
     height: auto;
-    /* min-height: 512px; */
-    margin-bottom: 16px;
-    background-color: var(--background-gray);
+    background-color: var(--color-rose);
     text-align: center;
-    padding: 32px 0;
 }
 
 .inner-section {
-    max-width: 1200px;
+    max-width: 1024px;
+    padding: 32px 0;
     margin: 0 auto;
     display: grid;
+    /* border-bottom: 1px solid var(--color-burgundy); */
 }
 
 .section-title {
@@ -227,6 +226,10 @@ button {
     margin-bottom: 32px;
 }
 
+.section-divider {
+    width: 60%;
+}
+
 /* Footer */
 
 .footer {
@@ -239,13 +242,13 @@ button {
 }
 
 @media (min-width: 800px) {
-    .section {
-        padding: 32px 2vw;
+    .inner-header {
+        /* border-bottom: 1px solid var(--color-burgundy); */
     }
 
-    /* .sub-section {
-        width: 48vw;
-    } */
+    .inner-section {
+        padding: 32px 0;
+    }
 }
 
 @media (min-width: 1040px) {
