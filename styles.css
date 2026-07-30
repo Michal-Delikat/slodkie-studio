@@ -72,7 +72,7 @@ button {
     text-transform: uppercase;
     cursor: pointer;
     transition: all 0.25s ease;
-    padding: 14px 32px;
+    padding: 10px 24px;
     border: 1px solid var(--color-burgundy);
     color: var(--color-white);
     background: var(--color-burgundy);
@@ -192,7 +192,7 @@ button {
 .section {
     box-sizing: border-box;
     height: auto;
-    min-height: 512px;
+    /* min-height: 512px; */
     margin-bottom: 16px;
     background-color: var(--background-gray);
     text-align: center;

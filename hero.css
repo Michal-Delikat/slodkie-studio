@@ -1,37 +1,10 @@
 /* Hero section */
 
 #hero {
-    min-height: clamp(500px, 100vh - var(--header-height), 900px);
+    /* min-height: clamp(500px, 100vh - var(--header-height), 900px); */
     padding: 0;
-    background-image: url('https://res.cloudinary.com/bmbhnvsi/image/upload/v1785323398/tort5_jgc7j7.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-.hero-title {
-    font-family: var(--ff-primary);
-    font-size: 46px;
-    font-weight: 700;
-    margin: 12px auto;
-    color: var(--color-burgundy);
-}
-
-.hero-subtitle {
-    font-family: var(--ff-primary);
-    font-size: 32px;
-    font-weight: 400;
-    color: var(--color-burgundy);
-}
-
-.wrapper {
-    width: 100%;
-    height: auto;
-    background: var(--background-opaque-rose);
-    backdrop-filter: blur(2px);
-    padding: 48px 2vw;
+    /* background-image: url('https://res.cloudinary.com/bmbhnvsi/image/upload/v1785323398/tort5_jgc7j7.jpg'); */
+    background: var(--color-rose);
 }
 
 .hero-image {
@@ -40,8 +13,27 @@
     object-fit: cover;
 }
 
+.hero-title {
+    font-family: var(--ff-primary);
+    font-size: 38px;
+    margin: 12px auto;
+    color: var(--color-burgundy);
+}
+
+.hero-subtitle {
+    font-family: var(--ff-primary);
+    font-size: 28px;
+    color: var(--color-burgundy);
+}
+
+.wrapper {
+    width: 100%;
+    height: auto;
+    padding: 48px 2vw;
+}
+
 .order-button {
-    margin-top: 32px;
+    margin-top: 16px;
     background-color: var(--color-burgundy);
     color: var(--color-rose);
 }
@@ -53,6 +45,23 @@
 
 @media (min-width: 800px) {
     #hero {
-        min-height: 800px;
+        flex-direction: row-reverse;
+        padding: 32px 0;
+    }
+
+    .hero-inner-section {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "text photo";
+    }
+
+    .hero-left-column {
+        grid-area: text;
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-right-column {
+        grid-area: photo;
     }
 }
