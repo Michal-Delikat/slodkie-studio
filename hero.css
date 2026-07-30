@@ -12,6 +12,7 @@
 }
 
 .hero-title {
+    font-family: var(--ff-secondary);
     font-size: 46px;
     font-weight: 700;
     margin: 12px auto;
@@ -41,13 +42,13 @@
 
 .order-button {
     margin-top: 32px;
-    background-color: var(--color-rose);
-    color: var(--color-burgundy)
+    background-color: var(--color-burgundy);
+    color: var(--color-rose);
 }
 
 .order-button:hover {
-    background-color: var(--color-burgundy);
-    color: var(--color-rose);
+    background-color: var(--color-rose);
+    color: var(--color-burgundy)
 }
 
 @media (min-width: 800px) {

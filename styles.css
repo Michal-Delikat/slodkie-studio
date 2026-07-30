@@ -12,16 +12,15 @@
 html {
     --header-height: 60px;
 
-    --ff-primary: "Gabarito", sans-serif;
     --ff-secondary: "Josefin Sans", sans-serif;
 
-    --color-burgundy: #3D1020;
-    --color-rose: #fed2da;
+    --color-burgundy: #370F16;
+    --color-rose: #eec9cd;
     --color-black: black;
     --color-white: white;
 
     --background-gray: rgb(245, 245, 245);
-    --background-opaque-rose: rgb(254, 210, 218, 0.5);
+    --background-opaque-rose: rgba(238, 201, 205, 0.5);
 
     scroll-padding-top: var(--header-height);
     scroll-behavior: smooth;
