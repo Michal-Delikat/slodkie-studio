@@ -10,17 +10,13 @@
     display: grid;
     grid-template-areas:
         "title"
-        "photo"
+        "left-image"
+        "right-image"
         "text";
-    padding: 3rem 0;
 }
 
 .offer-sub-section:first-of-type {
     padding-top: 0;
-}
-
-.offer-sub-section + .offer-sub-section {
-    border-top: 1px solid color-mix(in srgb, var(--color-burgundy) 20%, transparent);
 }
 
 .offer-sub-section-title {
@@ -32,6 +28,15 @@
     max-height: 400px;
     object-fit: cover;
     grid-area: photo;
+    margin-bottom: 0.5rem;
+}
+
+.left-image {
+    grid-area: left-image;
+}
+
+.right-image {
+    grid-area: right-image;
 }
 
 .offer-paragraph {
@@ -51,14 +56,10 @@
 @media (min-width: 800px) {
     .offer-sub-section {
         grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
         grid-template-areas:
             "title title"
-            "photo text";
-    }
-
-    .offer-sub-section + .offer-sub-section {
-        grid-template-areas:
-            "title title"
-            "text photo";
+            "left-image right-image"
+            "text text";
     }
 }

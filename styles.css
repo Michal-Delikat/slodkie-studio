@@ -25,12 +25,11 @@ html {
     --ff-secondary: "Josefin Sans", sans-serif;
 
     --color-burgundy: #370F16;
-    --color-rose: #eec9cd;
+    --color-rose: hsl(354, 52%, 86%);
     --color-black: black;
     --color-white: white;
 
-    --background-gray: rgb(245, 245, 245);
-    --background-opaque-rose: rgba(238, 201, 205, 0.5);
+    --max-width: 1152px;
 
     scroll-padding-top: var(--header-height);
     scroll-behavior: smooth;
@@ -41,6 +40,7 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
+    background-color: var(--color-rose);
 }
 
 h1, h2, h3 {
@@ -92,14 +92,16 @@ button {
 .section {
     box-sizing: border-box;
     height: auto;
-    background-color: var(--color-rose);
     text-align: center;
 }
 
 .inner-section {
-    max-width: 1024px;
+    border-top: 1px solid color-mix(in srgb, var(--color-burgundy) 20%, transparent);
+}
+
+.inner-section {
+    max-width: var(--max-width);
     min-height: 100px;
-    padding: 32px 0;
     margin: 0 auto;
     display: grid;
     /* border-bottom: 1px solid var(--color-burgundy); */
@@ -107,11 +109,11 @@ button {
 
 .section-title {
     font-family: var(--ff-secondary);
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 300;
     letter-spacing: 0.06em;
     color: #3D1020;
-    margin-bottom: 32px;
+    margin: 1rem 0;
 }
 
 .sub-section {
@@ -120,11 +122,11 @@ button {
 
 .sub-section-title {
     font-family: var(--ff-secondary);
-    font-size: 28px;
-    font-weight: 200;
+    font-size: 1.5rem;
+    font-weight: 300;
     letter-spacing: 0.06em;
     color: #3D1020;
-    margin-bottom: 1rem;
+    margin: 0.5rem;
 }
 
 /* Footer */
