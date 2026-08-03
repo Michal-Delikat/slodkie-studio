@@ -28,7 +28,7 @@
     max-height: 400px;
     object-fit: cover;
     grid-area: photo;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .left-image {

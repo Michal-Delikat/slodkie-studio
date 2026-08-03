@@ -21,6 +21,7 @@
     height: 100%;
     margin: 0 auto;
     padding: 0 12px;
+    border-bottom: 1px solid color-mix(in srgb, var(--color-burgundy) 20%, transparent);
 }
 
 .logo-container {

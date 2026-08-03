@@ -37,16 +37,6 @@
     margin: 48px auto;
 }
 
-.order-button {
-    background-color: var(--color-burgundy);
-    color: var(--color-rose);
-}
-
-.order-button:hover {
-    background-color: var(--color-rose);
-    color: var(--color-burgundy)
-}
-
 @media (min-width: 800px) {
     #hero {
         flex-direction: row-reverse;
