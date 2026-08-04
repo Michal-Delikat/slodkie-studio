@@ -21,7 +21,7 @@
     height: 100%;
     margin: 0 auto;
     padding: 0 12px;
-    border-bottom: 1px solid color-mix(in srgb, var(--color-burgundy) 20%, transparent);
+    border-bottom: var(--border);
 }
 
 .logo-container {
@@ -56,11 +56,12 @@
 }
 
 .nav-list.is-open {
-    height: 150px;
+    height: 160px;
+    border-bottom: var(--border);
 }
 
 .nav-list > * {
-    font-family: var(--ff-secondary);
+    font-family: var(--ff-primary);
     font-size: 18px;
     padding: 0.25rem 0;
 }

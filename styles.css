@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
-
 @font-face {
     font-family: 'Cantor Bold';
     src: url('./fonts/Canter-Bold.woff2') format('woff2'),
@@ -21,8 +19,8 @@
 html {
     --header-height: 60px;
 
-    --ff-primary: "Cantor Bold", sans-serif;
-    --ff-secondary: "Josefin Sans", sans-serif;
+    --ff-primary: "Montserrat", sans-serif;
+    --ff-secondary: "Cantor Bold", sans-serif;
 
     --color-burgundy: #370F16;
     --color-rose: hsl(354, 52%, 86%);
@@ -30,6 +28,8 @@ html {
     --color-white: white;
 
     --max-width: 1152px;
+
+    --border: 1px solid color-mix(in srgb, var(--color-burgundy) 20%, transparent);
 
     scroll-padding-top: var(--header-height);
     scroll-behavior: smooth;
@@ -40,14 +40,6 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
-}
-
-h1, h2, h3 {
-    font-family: var(--ff-secondary);
-}
-
-p {
-    font-family: var(--ff-secondary);
 }
 
 a,
@@ -64,23 +56,20 @@ button {
     background: none;
 }
 
+.paragraph {
+    font-family: var(--ff-primary);
+}
+
 .button {
-    font-family: var(--ff-secondary);
-    font-size: 14px;
+    font-family: var(--ff-primary);
+    font-size: 1rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     cursor: pointer;
-    transition: all 0.25s ease;
-    padding: 0.5rem 1rem;
-    border: 1px solid var(--color-burgundy);
-    color: var(--color-burgundy);
-    background: var(--color-rose);
-    border-radius: 12px;
-}
-
-.button:hover {
-    background: var(--color-burgundy);
+    padding: 0.75rem 1.5rem;
     color: var(--color-rose);
+    background: var(--color-burgundy);
+    border-radius: 12px;
 }
 
 /* Main */
@@ -100,7 +89,7 @@ button {
 }
 
 .inner-section {
-    border-top: 1px solid color-mix(in srgb, var(--color-burgundy) 20%, transparent);
+    border-top: var(--border);
 }
 
 .inner-section {
@@ -112,7 +101,7 @@ button {
 }
 
 .section-title {
-    font-family: var(--ff-secondary);
+    font-family: var(--ff-primary);
     font-size: 2rem;
     font-weight: 300;
     letter-spacing: 0.06em;
@@ -125,7 +114,7 @@ button {
 }
 
 .sub-section-title {
-    font-family: var(--ff-secondary);
+    font-family: var(--ff-primary);
     font-size: 1.5rem;
     font-weight: 300;
     letter-spacing: 0.06em;
@@ -143,4 +132,5 @@ button {
 .copyright {
     color: var(--color-burgundy);
     margin: 16px auto;
+    font-family: var(--ff-primary);
 }

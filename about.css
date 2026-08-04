@@ -17,12 +17,13 @@
     object-fit: cover;
 }
 
-.about-me-right-column {
-    padding: 2rem 2rem 0;
-}
-
 .about-me-right-column > * {
     text-align: left;
+}
+
+.about-me-paragraphs {
+    margin: 2rem 0 0;
+    padding: 0 2rem;
 }
 
 .about-me-paragraph {
@@ -30,8 +31,10 @@
     font-weight: 300;
     line-height: 1.9;
     letter-spacing: 0.03em;
+}
+
+.about-me-paragraph + .about-me-paragraph {
     margin-bottom: 16px;
-    padding-left: 16px;
 }
 
 @media (min-width: 800px) {

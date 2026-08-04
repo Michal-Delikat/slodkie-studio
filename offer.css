@@ -14,9 +14,9 @@
         "right-image"
         "text";
 }
-
-.offer-sub-section:first-of-type {
-    padding-top: 0;
+    
+.offer-sub-section:not(:last-of-type) {
+    padding-bottom: 2rem;
 }
 
 .offer-sub-section-title {
@@ -28,6 +28,9 @@
     max-height: 400px;
     object-fit: cover;
     grid-area: photo;
+}
+
+.offer-image:not(:last-of-type) {
     margin-bottom: 1rem;
 }
 
@@ -42,9 +45,8 @@
 .offer-paragraph {
     grid-area: text;
     box-sizing: border-box;
-    width: 75%;
-    margin: 36px auto;
-    padding: 0 16px;
+    margin: 2rem auto 0;
+    padding: 0 2rem;
     font-size: 15px;
     font-weight: 300;
     line-height: 1.9;
@@ -61,5 +63,9 @@
             "title title"
             "left-image right-image"
             "text text";
+    }
+
+    .offer-image:not(:last-of-type) {
+        margin: 0;
     }
 }
