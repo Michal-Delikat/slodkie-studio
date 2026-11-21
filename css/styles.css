@@ -96,6 +96,7 @@ body {
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
     font-family: var(--ff-primary);
+    font-weight: var(--fw-body);
     background-color: var(--color-bg);
 }
 
@@ -209,7 +210,7 @@ button {
 .section-title {
     font-family: var(--ff-secondary);
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: var(--fw-body);
     letter-spacing: 0.06em;
     color: #3D1020;
     margin-bottom: 1.5rem;
@@ -222,7 +223,7 @@ button {
 .sub-section-title {
     font-family: var(--ff-secondary);
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: var(--fw-body);
     letter-spacing: 0.06em;
     color: var(--color-burgundy);
     margin-bottom: 1rem;
