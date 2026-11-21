@@ -1,47 +1,176 @@
-/* Reviews section */
+/* Opinie section */
 
-.reviews-inner-section {
-    display: block;
+.reviews {
+    background-color: var(--brand-pink);
+    padding: clamp(3.5rem, 8vw, 7rem) 0;
+    text-align: left;
 }
 
-.reviews-grid {
+.reviews-inner {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.reviews-head {
+    margin-bottom: clamp(2rem, 4vw, 3rem);
+}
+
+.reviews-eyebrow {
+    margin: 0 0 clamp(1rem, 2vw, 1.5rem);
+    font-family: var(--ff-primary);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+}
+
+.reviews-title {
+    margin: 0;
+    font-family: var(--ff-secondary);
+    font-size: clamp(36px, 4.5vw, 64px);
+    font-weight: 500;
+    line-height: 1.05;
+    letter-spacing: 0.005em;
+    color: var(--color-text);
+}
+
+/* Summary line */
+
+.reviews-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin: 0 0 clamp(1.75rem, 3vw, 2.5rem);
+    font-family: var(--ff-primary);
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--color-text-muted);
+}
+
+.reviews-summary-line {
+    margin: 0;
+}
+
+.reviews-summary a {
+    color: var(--color-text);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.reviews-summary a:hover {
+    color: var(--color-text-muted);
+}
+
+.reviews-stat {
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+/* List of cards */
+
+.reviews-list {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.5rem;
-    padding: 0 1rem;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .review-card {
-    margin: 0;
-    padding: 1.75rem 1.5rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    text-align: left;
-    border: var(--border);
-    border-radius: 16px;
-    background: color-mix(in srgb, var(--color-white) 40%, transparent);
+    height: 100%;
+    margin: 0;
+    padding: 32px;
+    background-color: #FBF9F6;
+    border: 1px solid var(--color-line);
+    border-radius: 2px;
+}
+
+.review-quote-mark {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-family: var(--ff-secondary);
+    font-size: clamp(40px, 4vw, 56px);
+    line-height: 0.5;
+    color: var(--color-accent);
 }
 
 .review-quote {
     margin: 0;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 1.9;
-    letter-spacing: 0.03em;
-    color: var(--color-burgundy);
+}
+
+.review-quote p {
+    margin: 0;
+    font-family: var(--ff-secondary);
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(22px, 1.6vw, 24px);
+    line-height: 1.45;
+    color: var(--color-text);
+}
+
+.review-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    margin-top: auto;
+    padding-top: 1.5rem;
 }
 
 .review-author {
-    font-family: var(--ff-secondary);
-    font-size: 1.25rem;
-    letter-spacing: 0.04em;
-    color: var(--color-burgundy);
+    font-family: var(--ff-primary);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-text-muted);
 }
 
-@media (min-width: 800px) {
-    .reviews-grid {
-        grid-template-columns: repeat(3, 1fr);
-        padding: 0;
+.review-detail {
+    font-family: var(--ff-primary);
+    font-size: 13px;
+    color: var(--color-text-muted);
+}
+
+/* Link below the list */
+
+.reviews-all {
+    display: inline-block;
+    margin-top: clamp(2rem, 4vw, 3rem);
+    font-family: var(--ff-primary);
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    color: var(--color-text);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.reviews-all:hover {
+    color: var(--color-text-muted);
+}
+
+.reviews-summary a:focus-visible,
+.reviews-all:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 4px;
+}
+
+/* Desktop grid */
+
+@media (min-width: 900px) {
+    .reviews-list {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: clamp(16px, 2vw, 24px);
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 899px) {
+    .reviews-inner {
+        padding: 0 20px;
     }
 }

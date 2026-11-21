@@ -17,6 +17,24 @@
 }
 
 @font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('../fonts/cormorant-garamond-italic-latin-ext.woff2') format('woff2');
+    font-weight: 400 500;
+    font-style: italic;
+    font-display: swap;
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('../fonts/cormorant-garamond-italic-latin.woff2') format('woff2');
+    font-weight: 400 500;
+    font-style: italic;
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
     font-family: 'Jost';
     src: url('../fonts/jost-latin-ext.woff2') format('woff2');
     font-weight: 300 600;
@@ -45,15 +63,22 @@
 }
 
 :root {
-    --header-height: 60px;
+    --header-height: 72px;
 
     --ff-primary: "Jost", sans-serif;
     --ff-secondary: "Cormorant Garamond", serif;
 
-    --color-burgundy: #370F16;
-    --color-rose: hsl(354, 52%, 86%);
+    --color-burgundy: var(--brand-brown);
+    --color-rose: var(--brand-pink);
     --color-black: black;
     --color-white: white;
+
+    --color-bg: #F7F4EF;
+    --color-hero-bg: #F1E8E4;
+    --color-text: #2B2623;
+    --color-text-muted: #5F544D;
+    --color-accent: #2B2623;
+    --color-line: color-mix(in srgb, var(--color-text) 14%, transparent);
 
     --max-width: 1498px;
 
@@ -71,6 +96,7 @@ body {
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
     font-family: var(--ff-primary);
+    background-color: var(--color-bg);
 }
 
 a,
@@ -78,7 +104,7 @@ a:hover,
 a:visited,
 a:active,
 a:focus {
-  color: inherit;
+  /* color: inherit; */
   text-decoration: none;
 }
 
@@ -103,9 +129,58 @@ button {
     border-radius: 12px;
 }
 
+/* Pill links/buttons */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-family: var(--ff-primary);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 0.85rem 1.6rem;
+    border: 1px solid var(--color-accent);
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-solid {
+    background-color: var(--color-accent);
+    color: #fff;
+}
+
+.btn-solid:hover,
+.btn-solid:focus-visible {
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--color-text);
+}
+
+.btn-outline:hover,
+.btn-outline:focus-visible {
+    background-color: var(--color-accent);
+    color: var(--color-bg);
+}
+
+.btn:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+}
+
 /* Main */
 
 .main {
+    min-width: 0;
     background-color: var(--color-rose);
 }
 
