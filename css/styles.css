@@ -55,7 +55,7 @@
     --color-black: black;
     --color-white: white;
 
-    --max-width: 1152px;
+    --max-width: 1498px;
 
     --border: 1px solid color-mix(in srgb, var(--color-burgundy) 20%, transparent);
 }

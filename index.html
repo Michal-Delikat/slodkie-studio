@@ -4,7 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Słodkie Studio</title>
-        <link rel="icon" type="image/x-icon" href="/img/logo.jpg">
+        <link rel="icon" type="image/svg+xml" href="./img/favicon.svg">
+        <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32.png">
+        <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -13,6 +16,8 @@
         <link rel="stylesheet" href="css/hero.css">
         <link rel="stylesheet" href="css/about.css">
         <link rel="stylesheet" href="css/offer.css">
+        <link rel="stylesheet" href="css/reviews.css">
+        <link rel="stylesheet" href="css/process.css">
         <link rel="stylesheet" href="css/contact.css">
         <script src="index.js" defer></script>
     </head>
@@ -24,8 +29,10 @@
                 </a>
                 <nav class="nav">
                     <ul class="nav-list">
-                        <li><a href="#about">O mnie</a></li>
                         <li><a href="#offer">Oferta</a></li>
+                        <li><a href="#reviews">Opinie</a></li>
+                        <li><a href="#about">O mnie</a></li>
+                        <li><a href="#process">Proces</a></li>
                         <li><a href="#contact">Kontakt</a></li>
                         <li class="social-media-icons">
                             <a href="https://www.instagram.com/slodkiestudio/" target="_blank" aria-label="Instagram">
@@ -55,28 +62,12 @@
                     <div class="sub-section hero-left-column">
                         <div class="wrapper">
                             <h3 class="hero-title">SŁODKIE STUDIO</h3>
-                            <h4 class="hero-subtitle">Autorskie torty na każdą okazję</h4>
+                            <p class="hero-subtitle">Autorskie torty na każdą okazję</p>
                             <button class="button order-button" type="button">Zamów</button>
                         </div>
                     </div>
                 </div>
             </section>
-
-            <section id="about" class="section">
-                <div class="inner-section about-inner-section">
-                    <h2 class="section-title about-me-title">O mnie</h2>
-                    <div class="sub-section about-me-left-column">
-                        <img src="https://res.cloudinary.com/bmbhnvsi/image/upload/v1785412466/slodki_stol_g3fzct.jpg" class="about-me-photo"/>
-                    </div>
-                    <div class="sub-section about-me-right-column">
-                        <div class="about-me-paragraphs">
-                            <p class="paragraph about-me-paragraph"><b>Cześć, jestem Gosia!</b> Tworzę torty, które są nie tylko piękne, ale i pyszne. Każde zamówienie traktuję indywidualnie — od pierwszej rozmowy aż po ostatni detal dekoracji.</p>
-                            <br/>
-                            <p class="paragraph about-me-paragraph">Moja przygoda ze słodkościami zaczęła się od małej kuchni i wielkiej pasji. Dziś każdy tort który wychodzi z mojego studia to efekt godzin pracy i miłości do tego co robię. Nie ma dla mnie rzeczy niemożliwych — jeśli możesz to sobie wyobrazić, ja mogę to upiec.</p>
-                        </div>
-                </div>
-            </section>
-
 
             <section id="offer" class="section">
                 <div class="inner-section offer-inner-section">
@@ -93,6 +84,73 @@
                         <img src="https://res.cloudinary.com/bmbhnvsi/image/upload/v1785330365/slodki_stol2_r2jzfl.jpg" class="offer-image right-image"/>
                         <p class="paragraph offer-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                     </div>
+                </div>
+            </section>
+
+
+            <section id="reviews" class="section">
+                <div class="inner-section reviews-inner-section">
+                    <h2 class="section-title reviews-section-title">Opinie</h2>
+                    <div class="reviews-grid">
+                        <figure class="review-card">
+                            <blockquote class="paragraph review-quote">Tort był dokładnie taki, jak sobie wymarzyłam — piękny i przepyszny. Goście nie mogli się nachwalić!</blockquote>
+                            <figcaption class="review-author">Anna K.</figcaption>
+                        </figure>
+                        <figure class="review-card">
+                            <blockquote class="paragraph review-quote">Profesjonalizm i cudowne podejście. Gosia spełniła każdą zachciankę, a efekt przeszedł nasze oczekiwania.</blockquote>
+                            <figcaption class="review-author">Marta i Paweł</figcaption>
+                        </figure>
+                        <figure class="review-card">
+                            <blockquote class="paragraph review-quote">Słodki stół na naszym weselu zachwycił wszystkich gości. Polecam z całego serca!</blockquote>
+                            <figcaption class="review-author">Kasia</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="about" class="section">
+                <div class="inner-section about-inner-section">
+                    <h2 class="section-title about-me-title">O mnie</h2>
+                    <div class="sub-section about-me-left-column">
+                        <img src="https://res.cloudinary.com/bmbhnvsi/image/upload/v1785412466/slodki_stol_g3fzct.jpg" class="about-me-photo"/>
+                    </div>
+                    <div class="sub-section about-me-right-column">
+                        <div class="about-me-paragraphs">
+                            <p class="paragraph about-me-paragraph"><b>Cześć, jestem Gosia!</b> Tworzę torty, które są nie tylko piękne, ale i pyszne. Każde zamówienie traktuję indywidualnie — od pierwszej rozmowy aż po ostatni detal dekoracji.</p>
+                            <br/>
+                            <p class="paragraph about-me-paragraph">Moja przygoda ze słodkościami zaczęła się od małej kuchni i wielkiej pasji. Dziś każdy tort który wychodzi z mojego studia to efekt godzin pracy i miłości do tego co robię. Nie ma dla mnie rzeczy niemożliwych — jeśli możesz to sobie wyobrazić, ja mogę to upiec.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="process" class="section">
+                <div class="inner-section process-inner-section">
+                    <h2 class="section-title process-section-title">Proces</h2>
+                    <ol class="process-steps">
+                        <li class="process-step">
+                            <span class="process-step-number">01</span>
+                            <h3 class="sub-section-title process-step-title">Rozmowa</h3>
+                            <p class="paragraph process-step-text">Zaczynamy od poznania Twoich marzeń i okazji. Ustalamy motyw, smaki oraz wielkość wypieku.</p>
+                        </li>
+                        <li class="process-step">
+                            <span class="process-step-number">02</span>
+                            <h3 class="sub-section-title process-step-title">Projekt</h3>
+                            <p class="paragraph process-step-text">Przygotowuję projekt dekoracji i dobieram detale, aby całość była spójna i wyjątkowa.</p>
+                        </li>
+                        <li class="process-step">
+                            <span class="process-step-number">03</span>
+                            <h3 class="sub-section-title process-step-title">Realizacja</h3>
+                            <p class="paragraph process-step-text">Piekę i dekoruję tort z najwyższej jakości składników, przykładając wagę do każdego szczegółu.</p>
+                        </li>
+                        <li class="process-step">
+                            <span class="process-step-number">04</span>
+                            <h3 class="sub-section-title process-step-title">Dostawa</h3>
+                            <p class="paragraph process-step-text">Dostarczam i ustawiam wypiek na miejscu, abyś mógł cieszyć się wyjątkowym momentem.</p>
+                        </li>
+                    </ol>
                 </div>
             </section>
 

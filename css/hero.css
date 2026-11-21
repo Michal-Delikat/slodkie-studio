@@ -2,10 +2,14 @@
 
 #hero {
     padding: 0;
+    height: calc(100vh - var(--header-height));
+    height: calc(100svh - var(--header-height));
+    height: calc(100dvh - var(--header-height));
 }
 
 .hero-inner-section {
     padding: 0;
+    height: 100%;
 }
 
 .hero-image {

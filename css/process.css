@@ -1,0 +1,47 @@
+/* Process section */
+
+.process-inner-section {
+    display: block;
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+}
+
+.process-step {
+    padding: 1.75rem 1.5rem;
+    text-align: left;
+    border: var(--border);
+    border-radius: 16px;
+}
+
+.process-step-number {
+    display: block;
+    margin-bottom: 0.75rem;
+    font-family: var(--ff-secondary);
+    font-size: 2rem;
+    line-height: 1;
+    color: color-mix(in srgb, var(--color-burgundy) 55%, transparent);
+}
+
+.process-step-title {
+    margin-bottom: 0.5rem;
+}
+
+.process-step-text {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    color: var(--color-burgundy);
+}
+
+@media (min-width: 800px) {
+    .process-steps {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0;
+    }
+}
