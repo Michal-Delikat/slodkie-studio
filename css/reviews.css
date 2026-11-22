@@ -91,15 +91,6 @@
     border-radius: 2px;
 }
 
-.review-quote-mark {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-family: var(--ff-secondary);
-    font-size: clamp(40px, 4vw, 56px);
-    line-height: 0.5;
-    color: var(--color-accent);
-}
-
 .review-quote {
     margin: 0;
 }
