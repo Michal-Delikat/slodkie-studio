@@ -77,6 +77,10 @@
     outline-offset: 4px;
 }
 
+.nav-cta {
+    display: none;
+}
+
 /* Right side actions */
 
 .header-actions {
@@ -128,9 +132,7 @@
     }
 
     .header-cta {
-        padding: 0.6rem 1rem;
-        font-size: 11px;
-        letter-spacing: 0.12em;
+        display: none;
     }
 
     .menu-toggle {
@@ -173,6 +175,29 @@
         display: block;
         padding: 1rem 0;
         font-size: 13px;
+    }
+
+    .nav-cta {
+        display: block;
+    }
+
+    .nav-list li.nav-cta {
+        padding: 1rem 0;
+    }
+
+    .nav-list .nav-cta-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0.85rem 1.6rem;
+        font-size: 12px;
+        letter-spacing: 0.15em;
+    }
+
+    .nav-list .nav-cta-link:hover,
+    .nav-list .nav-cta-link:focus-visible {
+        color: var(--color-bg);
     }
 }
 /* Hero section */
