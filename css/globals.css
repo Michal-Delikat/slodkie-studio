@@ -166,7 +166,6 @@ button {
     color: #fff;
 }
 
-.btn-solid:hover,
 .btn-solid:focus-visible {
     background-color: #000;
     border-color: #000;
@@ -178,10 +177,22 @@ button {
     color: var(--color-text);
 }
 
-.btn-outline:hover,
 .btn-outline:focus-visible {
     background-color: var(--color-accent);
     color: var(--color-bg);
+}
+
+@media (hover: hover) {
+    .btn-solid:hover {
+        background-color: #000;
+        border-color: #000;
+        color: #fff;
+    }
+
+    .btn-outline:hover {
+        background-color: var(--color-accent);
+        color: var(--color-bg);
+    }
 }
 
 .btn:focus-visible {

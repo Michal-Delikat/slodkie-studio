@@ -37,3 +37,8 @@ if (menuToggleButton && navList) {
         }
     });
 }
+
+document.addEventListener('click', (event) => {
+    const button = event.target.closest('.btn');
+    if (button && event.detail > 0) button.blur();
+});
