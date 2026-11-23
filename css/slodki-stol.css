@@ -145,7 +145,7 @@
     overflow: hidden;
     background-color: var(--color-bg);
     border: 1px solid var(--color-line);
-    border-radius: 2px;
+    border-radius: 16px;
 }
 
 .ss-card-media {
@@ -218,7 +218,7 @@
     padding: clamp(1rem, 2vw, 1.5rem);
     background-color: var(--color-bg);
     border: 1px solid var(--color-line);
-    border-radius: 2px;
+    border-radius: 16px;
     text-align: center;
 }
 
