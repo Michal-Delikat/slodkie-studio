@@ -6,10 +6,10 @@ const siteHeaderMarkup = `
             </a>
             <nav class="nav" aria-label="Nawigacja główna">
                 <ul class="nav-list" id="primary-nav">
-                    <li><a href="#oferta">Oferta</a></li>
-                    <li><a href="#opinie">Opinie</a></li>
-                    <li><a href="#o-nas">O nas</a></li>
-                    <li><a href="#process">Proces</a></li>
+                    <li><a href="slodki-stol.html">Słodki stół</a></li>
+                    <li><a href="torty-weselne.html">Torty weselne</a></li>
+                    <li><a href="torty-okolicznosciowe.html">Torty okolicznościowe</a></li>
+                    <li><a href="index.html#o-nas">O nas</a></li>
                     <li class="nav-cta">
                         <a href="#contact" class="btn btn-outline nav-cta-link">Zapytaj o termin</a>
                     </li>
