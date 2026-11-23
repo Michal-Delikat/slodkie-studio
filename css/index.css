@@ -311,12 +311,9 @@
 @media (max-width: 899px) {
     .hero-inner {
         grid-template-columns: 1fr;
-        grid-template-rows: minmax(0, 1fr) auto;
         gap: 0;
         padding-left: 0;
-        min-height: calc(100vh - var(--header-height));
-        min-height: calc(100svh - var(--header-height));
-        min-height: calc(100dvh - var(--header-height));
+        min-height: 0;
     }
 
     .hero-content {
@@ -332,8 +329,7 @@
     .hero-media {
         order: 1;
         width: 100%;
-        min-height: 0;
-        aspect-ratio: auto;
+        aspect-ratio: 4 / 5;
     }
 }
 /* O nas section */
