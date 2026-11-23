@@ -263,6 +263,7 @@ button {
 }
 
 .footer-brand,
+.footer-nav-col,
 .footer-social-col,
 .footer-contact {
     min-width: 0;
@@ -330,6 +331,7 @@ button {
 }
 
 .footer-social:focus-visible,
+.footer-nav a:focus-visible,
 .footer-contact a:focus-visible {
     outline: 2px solid var(--brand-pink);
     outline-offset: 3px;
@@ -348,12 +350,31 @@ button {
     color: var(--brand-pink);
 }
 
+.footer-nav ul,
 .footer-contact ul {
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.footer-nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    font-family: var(--ff-primary);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-bg);
+    transition: color 0.2s ease;
+}
+
+.footer-nav a:hover {
+    color: var(--brand-pink);
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 .footer-contact a {
@@ -393,13 +414,14 @@ button {
     }
 
     .footer-grid {
-        grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr);
+        grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
         gap: clamp(2rem, 5vw, 4rem);
     }
 }
 
 @media (prefers-reduced-motion: reduce) {
     .footer-social,
+    .footer-nav a,
     .footer-contact a {
         transition: none;
     }

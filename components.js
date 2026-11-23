@@ -35,6 +35,15 @@ const siteFooterMarkup = `
                     </a>
                     <p class="footer-desc">Słodkie stoły i torty weselne. Rymanów, Krosno i okolice.</p>
                 </div>
+                <div class="footer-nav-col">
+                    <h2 class="footer-heading">Menu</h2>
+                    <ul class="footer-nav">
+                        <li><a href="slodki-stol.html">Słodki stół</a></li>
+                        <li><a href="torty-weselne.html">Torty weselne</a></li>
+                        <li><a href="torty-okolicznosciowe.html">Torty okolicznościowe</a></li>
+                        <li><a href="index.html#o-nas">O nas</a></li>
+                    </ul>
+                </div>
                 <div class="footer-social-col">
                     <h2 class="footer-heading">Social media</h2>
                     <ul class="footer-socials">
