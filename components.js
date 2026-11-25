@@ -1,15 +1,16 @@
 const siteHeaderMarkup = `
     <header class="header">
         <div class="inner-header">
-            <a href="index.html" class="header-logo">
-                <img src="./logo/logo_header.png" alt="Słodkie Studio" class="header-logo-img" width="512" height="142">
+            <a href="/" class="header-logo">
+                <img src="/logo/logo_header.png" alt="Słodkie Studio" class="header-logo-img" width="512" height="142">
             </a>
             <nav class="nav" aria-label="Nawigacja główna">
                 <ul class="nav-list" id="primary-nav">
-                    <li><a href="slodki-stol.html">Słodki stół</a></li>
-                    <li><a href="torty-weselne.html">Torty weselne</a></li>
-                    <li><a href="torty-okolicznosciowe.html">Torty okolicznościowe</a></li>
-                    <li><a href="index.html#o-nas">O nas</a></li>
+                    <li><a href="/slodki-stol">Słodki stół</a></li>
+                    <li><a href="/torty-weselne">Torty weselne</a></li>
+                    <li><a href="/dla-firm">Dla firm</a></li>
+                    <li><a href="/torty-okolicznosciowe">Torty okolicznościowe</a></li>
+                    <li><a href="/#o-nas">O nas</a></li>
                     <li class="nav-cta">
                         <a href="#contact" class="btn btn-outline nav-cta-link">Zapytaj o termin</a>
                     </li>
@@ -30,18 +31,19 @@ const siteFooterMarkup = `
         <div class="footer-inner">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="index.html" class="footer-logo">
-                        <img src="./logo/logo_header.png" alt="Słodkie Studio" width="512" height="142">
+                    <a href="/" class="footer-logo">
+                        <img src="/logo/logo_header.png" alt="Słodkie Studio" width="512" height="142">
                     </a>
                     <p class="footer-desc">Słodkie stoły i torty weselne. Rymanów, Krosno i okolice.</p>
                 </div>
                 <div class="footer-nav-col">
                     <h2 class="footer-heading">Menu</h2>
                     <ul class="footer-nav">
-                        <li><a href="slodki-stol.html">Słodki stół</a></li>
-                        <li><a href="torty-weselne.html">Torty weselne</a></li>
-                        <li><a href="torty-okolicznosciowe.html">Torty okolicznościowe</a></li>
-                        <li><a href="index.html#o-nas">O nas</a></li>
+                        <li><a href="/slodki-stol">Słodki stół</a></li>
+                        <li><a href="/torty-weselne">Torty weselne</a></li>
+                        <li><a href="/dla-firm">Dla firm</a></li>
+                        <li><a href="/torty-okolicznosciowe">Torty okolicznościowe</a></li>
+                        <li><a href="/#o-nas">O nas</a></li>
                     </ul>
                 </div>
                 <div class="footer-social-col">
