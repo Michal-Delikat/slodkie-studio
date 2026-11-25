@@ -8,8 +8,8 @@ const siteHeaderMarkup = `
                 <ul class="nav-list" id="primary-nav">
                     <li><a href="/slodki-stol">Słodki stół</a></li>
                     <li><a href="/torty-weselne">Torty weselne</a></li>
-                    <li><a href="/dla-firm">Dla firm</a></li>
                     <li><a href="/torty-okolicznosciowe">Torty okolicznościowe</a></li>
+                    <li><a href="/dla-firm">Dla firm</a></li>
                     <li><a href="/#o-nas">O nas</a></li>
                     <li class="nav-cta">
                         <a href="#contact" class="btn btn-outline nav-cta-link">Zapytaj o termin</a>
@@ -41,8 +41,8 @@ const siteFooterMarkup = `
                     <ul class="footer-nav">
                         <li><a href="/slodki-stol">Słodki stół</a></li>
                         <li><a href="/torty-weselne">Torty weselne</a></li>
-                        <li><a href="/dla-firm">Dla firm</a></li>
                         <li><a href="/torty-okolicznosciowe">Torty okolicznościowe</a></li>
+                        <li><a href="/dla-firm">Dla firm</a></li>
                         <li><a href="/#o-nas">O nas</a></li>
                     </ul>
                 </div>
