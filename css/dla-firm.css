@@ -49,6 +49,12 @@
     object-position: 50% 40%;
 }
 
+/* Offer: cards without links */
+
+.df-offer-item-body {
+    padding: clamp(1.25rem, 2vw, 1.75rem) clamp(1.25rem, 2.5vw, 2rem);
+}
+
 /* Occasions */
 
 .df-occasion-cards {
