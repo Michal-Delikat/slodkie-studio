@@ -3,7 +3,7 @@
 /* Hero layout */
 
 .ss-hero {
-    background-color: var(--brand-pink);
+    background-color: var(--color-bg);
     padding: 0;
     text-align: left;
 }

@@ -62,29 +62,6 @@
     text-decoration: none;
 }
 
-:root {
-    --header-height: 72px;
-
-    --ff-primary: "Jost", sans-serif;
-    --ff-secondary: "Cormorant Garamond", serif;
-
-    --color-burgundy: var(--brand-brown);
-    --color-rose: var(--brand-pink);
-    --color-black: black;
-    --color-white: white;
-
-    --color-bg: #F7F4EF;
-    --color-hero-bg: #F1E8E4;
-    --color-text: #2B2623;
-    --color-text-muted: #5F544D;
-    --color-accent: #2B2623;
-    --color-line: color-mix(in srgb, var(--color-text) 14%, transparent);
-
-    --max-width: 1498px;
-
-    --border: 1px solid color-mix(in srgb, var(--color-burgundy) 20%, transparent);
-}
-
 html {
     scroll-padding-top: var(--header-height);
     scroll-behavior: smooth;
@@ -136,8 +113,8 @@ button {
     text-transform: uppercase;
     cursor: pointer;
     padding: 0.75rem 1.5rem;
-    color: var(--color-rose);
-    background: var(--color-burgundy);
+    color: var(--color-accent-inverse);
+    background: var(--color-inverse-surface);
     border-radius: 12px;
 }
 
@@ -163,13 +140,7 @@ button {
 
 .btn-solid {
     background-color: var(--color-accent);
-    color: #fff;
-}
-
-.btn-solid:focus-visible {
-    background-color: #000;
-    border-color: #000;
-    color: #fff;
+    color: var(--color-on-accent);
 }
 
 .btn-outline {
@@ -179,19 +150,13 @@ button {
 
 .btn-outline:focus-visible {
     background-color: var(--color-accent);
-    color: var(--color-bg);
+    color: var(--color-text-inverse);
 }
 
 @media (hover: hover) {
-    .btn-solid:hover {
-        background-color: #000;
-        border-color: #000;
-        color: #fff;
-    }
-
     .btn-outline:hover {
         background-color: var(--color-accent);
-        color: var(--color-bg);
+        color: var(--color-text-inverse);
     }
 }
 
@@ -204,7 +169,7 @@ button {
 
 .main {
     min-width: 0;
-    background-color: var(--color-rose);
+    background-color: var(--color-bg);
 }
 
 .header-placeholder {
@@ -229,15 +194,6 @@ button {
     padding: 2rem 0;
 }
 
-.section-title {
-    font-family: var(--ff-secondary);
-    font-size: 2rem;
-    font-weight: var(--fw-body);
-    letter-spacing: 0.06em;
-    color: #3D1020;
-    margin-bottom: 1.5rem;
-}
-
 .sub-section {
     box-sizing: border-box;
 }
@@ -247,15 +203,15 @@ button {
     font-size: 1.5rem;
     font-weight: var(--fw-body);
     letter-spacing: 0.06em;
-    color: var(--color-burgundy);
+    color: var(--color-brand);
     margin-bottom: 1rem;
 }
 
 /* Footer */
 
 .footer {
-    background-color: var(--brand-brown);
-    border-top: 1px solid color-mix(in srgb, var(--brand-pink) 22%, transparent);
+    background-color: var(--color-inverse-surface);
+    border-top: 1px solid var(--color-line-inverse);
     text-align: left;
 }
 
@@ -294,7 +250,7 @@ button {
 }
 
 .footer-logo:focus-visible {
-    outline: 2px solid var(--brand-pink);
+    outline: 2px solid var(--color-accent-inverse);
     outline-offset: 4px;
 }
 
@@ -305,7 +261,7 @@ button {
     font-size: 15px;
     font-weight: var(--fw-body);
     line-height: 1.7;
-    color: var(--color-bg);
+    color: var(--color-text-inverse);
 }
 
 .footer-socials {
@@ -325,7 +281,7 @@ button {
     font-size: 15px;
     font-weight: 400;
     line-height: 1.4;
-    color: var(--color-bg);
+    color: var(--color-text-inverse);
     transition: color 0.2s ease;
 }
 
@@ -336,7 +292,7 @@ button {
 }
 
 .footer-social:hover {
-    color: var(--brand-pink);
+    color: var(--color-accent-inverse);
     text-decoration: underline;
     text-underline-offset: 3px;
 }
@@ -344,7 +300,7 @@ button {
 .footer-social:focus-visible,
 .footer-nav a:focus-visible,
 .footer-contact a:focus-visible {
-    outline: 2px solid var(--brand-pink);
+    outline: 2px solid var(--color-accent-inverse);
     outline-offset: 3px;
 }
 
@@ -358,7 +314,7 @@ button {
     font-size: 1.375rem;
     font-weight: 500;
     line-height: 1.2;
-    color: var(--brand-pink);
+    color: var(--color-accent-inverse);
 }
 
 .footer-nav ul,
@@ -378,12 +334,12 @@ button {
     font-size: 15px;
     font-weight: 400;
     line-height: 1.4;
-    color: var(--color-bg);
+    color: var(--color-text-inverse);
     transition: color 0.2s ease;
 }
 
 .footer-nav a:hover {
-    color: var(--brand-pink);
+    color: var(--color-accent-inverse);
     text-decoration: underline;
     text-underline-offset: 3px;
 }
@@ -396,19 +352,19 @@ button {
     font-size: 15px;
     font-weight: 400;
     line-height: 1.4;
-    color: var(--color-bg);
+    color: var(--color-text-inverse);
     transition: color 0.2s ease;
 }
 
 .footer-contact a:hover {
-    color: var(--brand-pink);
+    color: var(--color-accent-inverse);
     text-decoration: underline;
     text-underline-offset: 3px;
 }
 
 .footer-bottom {
     padding: 1.25rem 0 1.5rem;
-    border-top: 1px solid color-mix(in srgb, var(--brand-pink) 22%, transparent);
+    border-top: 1px solid var(--color-line-inverse);
 }
 
 .footer-bottom p {
@@ -416,7 +372,7 @@ button {
     font-family: var(--ff-primary);
     font-size: 13px;
     letter-spacing: 0.04em;
-    color: var(--brand-pink);
+    color: var(--color-accent-inverse);
 }
 
 @media (min-width: 768px) {
@@ -441,11 +397,11 @@ button {
 /* Shared subpage components */
 
 .ss-page {
-    background-color: var(--brand-pink);
+    background-color: var(--color-bg);
 }
 
 .ss-section {
-    background-color: var(--brand-pink);
+    background-color: var(--color-bg);
     padding: clamp(3.5rem, 8vw, 7rem) 0;
     text-align: left;
 }
@@ -546,7 +502,7 @@ button {
     flex-direction: column;
     height: 100%;
     overflow: hidden;
-    background-color: var(--color-bg);
+    background-color: var(--color-surface);
     border: 1px solid var(--color-line);
     border-radius: 16px;
 }
@@ -582,7 +538,7 @@ button {
     justify-content: center;
     min-height: 96px;
     padding: clamp(1rem, 2vw, 1.5rem);
-    background-color: var(--color-bg);
+    background-color: var(--color-surface);
     border: 1px solid var(--color-line);
     border-radius: 16px;
     text-align: center;
@@ -723,7 +679,7 @@ button {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--brand-pink);
+    background-color: var(--color-bg);
     border-bottom: 1px solid var(--color-line);
     z-index: 999;
 }
@@ -885,7 +841,7 @@ button {
         align-items: stretch;
         gap: 0;
         padding: 0 16px;
-        background-color: var(--brand-pink);
+        background-color: var(--color-bg);
         border-bottom: 1px solid var(--color-line);
         max-height: 0;
         overflow: hidden;
@@ -933,7 +889,7 @@ button {
 
     .nav-list .nav-cta-link:hover,
     .nav-list .nav-cta-link:focus-visible {
-        color: var(--color-bg);
+        color: var(--color-text-inverse);
     }
 }
 
@@ -942,7 +898,7 @@ button {
 /* Oferta section */
 
 .offer {
-    background-color: var(--brand-pink);
+    background-color: var(--color-bg);
     padding: clamp(3.5rem, 8vw, 7rem) 0;
     text-align: left;
 }
@@ -995,7 +951,7 @@ button {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     align-items: start;
-    background-color: var(--color-bg);
+    background-color: var(--color-surface);
     border: 1px solid var(--color-line);
     border-radius: 16px;
 }
@@ -1117,7 +1073,7 @@ button {
 /* Process section */
 
 .process {
-    background-color: var(--brand-pink);
+    background-color: var(--color-bg);
     padding: clamp(3.5rem, 8vw, 7rem) 0;
     text-align: left;
 }
@@ -1167,7 +1123,7 @@ button {
     height: 100%;
     padding: 32px;
     text-align: left;
-    background-color: var(--color-bg);
+    background-color: var(--color-surface);
     border: 1px solid var(--color-line);
     border-radius: 16px;
 }
@@ -1187,7 +1143,7 @@ button {
     font-size: 1.5rem;
     font-weight: var(--fw-body);
     letter-spacing: 0.06em;
-    color: var(--color-burgundy);
+    color: var(--color-brand);
 }
 
 .process-step-text {
@@ -1196,7 +1152,7 @@ button {
     font-weight: var(--fw-body);
     line-height: 1.7;
     letter-spacing: 0.01em;
-    color: var(--color-burgundy);
+    color: var(--color-brand);
 }
 
 @media (min-width: 768px) {
@@ -1213,7 +1169,7 @@ button {
 /* Contact section */
 
 .contact {
-    background-color: var(--brand-pink);
+    background-color: var(--color-bg);
     padding: clamp(3.5rem, 8vw, 7rem) 0;
     text-align: left;
 }
@@ -1289,6 +1245,166 @@ button {
 
 @media (max-width: 899px) {
     .contact-inner {
+        padding: 0 20px;
+    }
+}
+
+/* Reviews section (shared) */
+
+/* Opinie section */
+
+.reviews {
+    background-color: var(--color-bg);
+    padding: clamp(3.5rem, 8vw, 7rem) 0;
+    text-align: left;
+}
+
+.reviews-inner {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.reviews-head {
+    margin-bottom: clamp(2rem, 4vw, 3rem);
+}
+
+.reviews-title {
+    margin: 0;
+    font-family: var(--ff-secondary);
+    font-size: clamp(36px, 4.5vw, 64px);
+    font-weight: 500;
+    line-height: 1.05;
+    letter-spacing: 0.005em;
+    color: var(--color-text);
+}
+
+/* Summary line */
+
+.reviews-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin: 0 0 clamp(1.75rem, 3vw, 2.5rem);
+    font-family: var(--ff-primary);
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--color-text-muted);
+}
+
+.reviews-summary-line {
+    margin: 0;
+}
+
+.reviews-summary a {
+    color: var(--color-text);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.reviews-summary a:hover {
+    color: var(--color-text-muted);
+}
+
+.reviews-stat {
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+/* List of cards */
+
+.reviews-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 32px;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-line);
+    border-radius: 16px;
+}
+
+.review-quote {
+    margin: 0;
+}
+
+.review-quote p {
+    margin: 0;
+    font-family: var(--ff-secondary);
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(22px, 1.6vw, 24px);
+    line-height: 1.45;
+    color: var(--color-text);
+}
+
+.review-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    margin-top: auto;
+    padding-top: 1.5rem;
+}
+
+.review-author {
+    font-family: var(--ff-primary);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-text-muted);
+}
+
+.review-detail {
+    font-family: var(--ff-primary);
+    font-size: 13px;
+    color: var(--color-text-muted);
+}
+
+/* Link below the list */
+
+.reviews-all {
+    display: inline-block;
+    margin-top: clamp(2rem, 4vw, 3rem);
+    font-family: var(--ff-primary);
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    color: var(--color-text);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.reviews-all:hover {
+    color: var(--color-text-muted);
+}
+
+.reviews-summary a:focus-visible,
+.reviews-all:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 4px;
+}
+
+/* Desktop grid */
+
+@media (min-width: 900px) {
+    .reviews-list {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: clamp(16px, 2vw, 24px);
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 899px) {
+    .reviews-inner {
         padding: 0 20px;
     }
 }

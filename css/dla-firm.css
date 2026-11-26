@@ -13,7 +13,7 @@
 /* Hero: full-width photo on top, text below */
 
 .df-hero {
-    background-color: var(--brand-pink);
+    background-color: var(--color-bg);
     padding: 0;
     text-align: left;
 }

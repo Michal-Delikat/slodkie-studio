@@ -1,8 +1,41 @@
-/* Brand tokens — colors sampled from the logo */
+/* Design tokens */
 
 :root {
+    /* 1. Brand colors — raw values sampled from the logo */
     --brand-pink: #EEC9CD;
     --brand-brown: #370F16;
 
+    /* 2. Named palette — plain human names */
+    --pink: var(--brand-pink);
+    --brown: var(--brand-brown);
+    --beige: #F7F4EF;
+    --black: #2B2623;
+    --gray: #5F544D;
+    --white: #ffffff;
+
+    /* 3. Use cases — classes must reference these */
+    --color-bg: var(--pink);
+    --color-surface: var(--beige);
+    --color-text: var(--black);
+    --color-text-muted: var(--gray);
+    --color-accent: var(--black);
+    --color-brand: var(--brown);
+    --color-inverse-surface: var(--brown);
+    --color-text-inverse: var(--beige);
+    --color-accent-inverse: var(--pink);
+    --color-line: color-mix(in srgb, var(--black) 14%, transparent);
+    --color-line-inverse: color-mix(in srgb, var(--pink) 22%, transparent);
+    --color-surface-muted: color-mix(in srgb, var(--black) 5%, var(--beige));
+    --color-stripe: color-mix(in srgb, var(--black) 3%, transparent);
+    --color-on-accent: var(--white);
+    --border: 1px solid color-mix(in srgb, var(--brown) 20%, transparent);
+
+    /* Typography */
+    --ff-primary: "Jost", sans-serif;
+    --ff-secondary: "Cormorant Garamond", serif;
     --fw-body: 300;
+
+    /* Layout */
+    --header-height: 72px;
+    --max-width: 1498px;
 }
