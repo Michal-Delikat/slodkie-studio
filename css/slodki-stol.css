@@ -1,27 +1,6 @@
-/* Słodkie stoły — podstrona */
+/* Słodkie stoły — styles specyficzne dla podstrony */
 
-.ss-page {
-    background-color: var(--brand-pink);
-}
-
-.ss-section {
-    background-color: var(--brand-pink);
-    padding: clamp(3.5rem, 8vw, 7rem) 0;
-    text-align: left;
-}
-
-.ss-inner {
-    width: 100%;
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 0 24px;
-}
-
-.ss-page .btn {
-    min-height: 44px;
-}
-
-/* Hero */
+/* Hero layout */
 
 .ss-hero {
     background-color: var(--brand-pink);
@@ -34,48 +13,6 @@
     max-width: var(--max-width);
     margin: 0 auto;
     padding: 2.25rem 20px 1.5rem;
-}
-
-.ss-eyebrow {
-    margin: 0 0 clamp(1rem, 2vw, 1.5rem);
-    font-family: var(--ff-primary);
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: var(--color-text-muted);
-}
-
-.ss-hero-title {
-    margin: 0 0 clamp(1.25rem, 2.5vw, 2rem);
-    font-family: var(--ff-secondary);
-    font-size: clamp(40px, 11vw, 64px);
-    font-weight: 500;
-    line-height: 1.03;
-    letter-spacing: 0.005em;
-    color: var(--color-text);
-}
-
-.ss-hero-lead {
-    max-width: 44ch;
-    margin: 0 0 clamp(1.75rem, 3vw, 2.5rem);
-    font-family: var(--ff-primary);
-    font-size: 17px;
-    font-weight: var(--fw-body);
-    line-height: 1.7;
-    color: var(--color-text-muted);
-}
-
-.ss-hero-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    max-width: 560px;
-}
-
-.ss-hero-actions .btn {
-    flex: 1 1 0;
-    min-width: 220px;
 }
 
 .ss-hero-media {
@@ -96,82 +33,7 @@
     object-position: 50% 55%;
 }
 
-/* Shared headings and text */
-
-.ss-title {
-    margin: 0 0 clamp(1.5rem, 3vw, 2.25rem);
-    font-family: var(--ff-secondary);
-    font-size: clamp(36px, 4.5vw, 64px);
-    font-weight: 500;
-    line-height: 1.08;
-    letter-spacing: 0.005em;
-    color: var(--color-text);
-}
-
-.ss-text {
-    max-width: 65ch;
-    margin: 0 0 1.5rem;
-    font-family: var(--ff-primary);
-    font-size: 17px;
-    font-weight: var(--fw-body);
-    line-height: 1.7;
-    color: var(--color-text-muted);
-}
-
-.ss-note {
-    max-width: 70ch;
-    margin: 0;
-    font-family: var(--ff-primary);
-    font-size: 14px;
-    line-height: 1.6;
-    color: var(--color-text-muted);
-}
-
-/* Cards */
-
-.ss-cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: clamp(1rem, 2vw, 1.5rem);
-    margin: 0 0 clamp(1.5rem, 3vw, 2rem);
-    padding: 0;
-    list-style: none;
-}
-
-.ss-card {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    overflow: hidden;
-    background-color: var(--color-bg);
-    border: 1px solid var(--color-line);
-    border-radius: 16px;
-}
-
-.ss-card-media {
-    aspect-ratio: 4 / 3;
-    overflow: hidden;
-}
-
-.ss-card-media picture,
-.ss-card-media img {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-.ss-card-media img {
-    object-fit: cover;
-}
-
-.ss-card-title {
-    margin: 1rem 1.25rem 0.35rem;
-    font-family: var(--ff-secondary);
-    font-size: 1.5rem;
-    font-weight: 500;
-    line-height: 1.2;
-    color: var(--color-text);
-}
+/* Card text */
 
 .ss-card-text {
     margin: 0 1.25rem 1.5rem;
@@ -180,23 +42,6 @@
     font-weight: var(--fw-body);
     line-height: 1.7;
     color: var(--color-text-muted);
-}
-
-/* Placeholder for missing photos */
-
-.ss-photo-placeholder {
-    display: block;
-    width: 100%;
-    background-color: color-mix(in srgb, var(--color-text) 5%, var(--color-bg));
-    background-image: repeating-linear-gradient(
-        135deg,
-        transparent 0 12px,
-        color-mix(in srgb, var(--color-text) 3%, transparent) 12px 24px
-    );
-}
-
-.ss-card-media .ss-photo-placeholder {
-    height: 100%;
 }
 
 /* Taste cards */
@@ -208,27 +53,6 @@
     margin: 0 0 1.5rem;
     padding: 0;
     list-style: none;
-}
-
-.ss-taste-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 96px;
-    padding: clamp(1rem, 2vw, 1.5rem);
-    background-color: var(--color-bg);
-    border: 1px solid var(--color-line);
-    border-radius: 16px;
-    text-align: center;
-}
-
-.ss-taste-card-title {
-    margin: 0;
-    font-family: var(--ff-secondary);
-    font-size: clamp(20px, 2vw, 26px);
-    font-weight: 500;
-    line-height: 1.2;
-    color: var(--color-text);
 }
 
 /* Gallery */
@@ -260,12 +84,6 @@
     border-radius: 2px;
 }
 
-.ss-gallery .ss-photo-placeholder {
-    aspect-ratio: 4 / 3;
-    border: 1px solid var(--color-line);
-    border-radius: 2px;
-}
-
 .ss-gallery-item figcaption {
     margin-top: 0.75rem;
     font-family: var(--ff-primary);
@@ -274,100 +92,9 @@
     color: var(--color-text-muted);
 }
 
-/* FAQ */
-
-.ss-faq {
-    border-top: 1px solid var(--color-line);
-}
-
-.ss-faq-item {
-    border-bottom: 1px solid var(--color-line);
-}
-
-.ss-faq-question {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    min-height: 44px;
-    padding: 1.1rem 0;
-    cursor: pointer;
-    font-family: var(--ff-primary);
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 1.4;
-    color: var(--color-text);
-    list-style: none;
-}
-
-.ss-faq-question::-webkit-details-marker {
-    display: none;
-}
-
-.ss-faq-question::after {
-    content: "+";
-    font-family: var(--ff-secondary);
-    font-size: 1.5rem;
-    line-height: 1;
-    color: var(--color-text-muted);
-}
-
-.ss-faq-item[open] .ss-faq-question::after {
-    content: "–";
-}
-
-.ss-faq-question:focus-visible {
-    outline: 2px solid var(--color-accent);
-    outline-offset: 3px;
-}
-
-.ss-faq-answer {
-    padding: 0 0 1.25rem;
-}
-
-.ss-faq-answer p {
-    max-width: 70ch;
-    margin: 0;
-    font-family: var(--ff-primary);
-    font-size: 15px;
-    font-weight: var(--fw-body);
-    line-height: 1.7;
-    color: var(--color-text-muted);
-}
-
-.ss-faq-answer a {
-    color: var(--color-text);
-    text-decoration: underline;
-    text-underline-offset: 3px;
-}
-
-/* Contact links */
-
-.ss-page .contact-value a {
-    display: inline-flex;
-    align-items: center;
-    min-height: 44px;
-    color: inherit;
-}
-
-.ss-page .contact-value a:hover {
-    color: var(--color-text-muted);
-}
-
-.ss-page .contact-value a:focus-visible,
-.ss-faq-answer a:focus-visible {
-    outline: 2px solid var(--color-accent);
-    outline-offset: 3px;
-    border-radius: 2px;
-}
-
 /* Responsive */
 
 @media (min-width: 640px) {
-    .ss-cards {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
     .ss-taste-cards {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
@@ -382,38 +109,14 @@
         padding: clamp(2.5rem, 5vw, 4rem) 24px clamp(1.5rem, 3vw, 2.5rem);
     }
 
-    .ss-hero-title {
-        font-size: clamp(48px, 5vw, 72px);
-    }
-
     .ss-hero-media {
         height: clamp(360px, 60vh, 720px);
     }
 }
 
 @media (min-width: 1100px) {
-    .ss-cards {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-
     .ss-taste-cards {
         grid-template-columns: repeat(5, minmax(0, 1fr));
-    }
-}
-
-@media (max-width: 899px) {
-    .ss-inner {
-        padding: 0 20px;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto;
-    }
-
-    .ss-page .btn {
-        transition: none;
     }
 }
 

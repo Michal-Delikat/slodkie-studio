@@ -19,7 +19,12 @@ const siteHeaderMarkup = `
             <div class="header-actions">
                 <a href="#contact" class="btn btn-outline header-cta">Zapytaj o termin</a>
                 <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Otwórz menu">
-                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                    <svg class="menu-icon menu-icon-open" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M3 6h18M3 12h18M3 18h18"/>
+                    </svg>
+                    <svg class="menu-icon menu-icon-close" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M5 5l14 14M19 5L5 19"/>
+                    </svg>
                 </button>
             </div>
         </div>

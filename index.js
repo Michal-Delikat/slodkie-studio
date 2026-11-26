@@ -7,12 +7,6 @@ if (menuToggleButton && navList) {
         navList.classList.toggle('is-open', open);
         menuToggleButton.setAttribute('aria-expanded', String(open));
         menuToggleButton.setAttribute('aria-label', open ? 'Zamknij menu' : 'Otwórz menu');
-
-        const icon = menuToggleButton.querySelector('i');
-        if (icon) {
-            icon.classList.toggle('fa-bars', !open);
-            icon.classList.toggle('fa-xmark', open);
-        }
     };
 
     const closeMenu = () => setOpen(false);

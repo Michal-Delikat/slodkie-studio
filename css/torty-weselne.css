@@ -189,3 +189,20 @@
         transform: none;
     }
 }
+
+/* Placeholder for missing photos */
+
+.ss-photo-placeholder {
+    display: block;
+    width: 100%;
+    background-color: color-mix(in srgb, var(--color-text) 5%, var(--color-bg));
+    background-image: repeating-linear-gradient(
+        135deg,
+        transparent 0 12px,
+        color-mix(in srgb, var(--color-text) 3%, transparent) 12px 24px
+    );
+}
+
+.ss-card-media .ss-photo-placeholder {
+    height: 100%;
+}
