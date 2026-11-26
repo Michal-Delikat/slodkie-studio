@@ -42,7 +42,7 @@ const siteFooterMarkup = `
                     <p class="footer-desc">Słodkie stoły i torty weselne. Rymanów, Krosno i okolice.</p>
                 </div>
                 <div class="footer-nav-col">
-                    <h2 class="footer-heading">Menu</h2>
+                    <p class="footer-heading">Menu</p>
                     <ul class="footer-nav">
                         <li><a href="/slodki-stol">Słodki stół</a></li>
                         <li><a href="/torty-weselne">Torty weselne</a></li>
@@ -52,7 +52,7 @@ const siteFooterMarkup = `
                     </ul>
                 </div>
                 <div class="footer-social-col">
-                    <h2 class="footer-heading">Social media</h2>
+                    <p class="footer-heading">Social media</p>
                     <ul class="footer-socials">
                         <li>
                             <a class="footer-social" href="https://www.instagram.com/slodkiestudio/" aria-label="Instagram – Słodkie Studio" target="_blank" rel="noopener noreferrer">
@@ -75,7 +75,7 @@ const siteFooterMarkup = `
                     </ul>
                 </div>
                 <div class="footer-contact">
-                    <h2 class="footer-heading">Kontakt</h2>
+                    <p class="footer-heading">Kontakt</p>
                     <ul>
                         <li><a href="tel:+48722792459">+48 722 792 459</a></li>
                         <li><a href="mailto:slodkiestudio@gmail.com">slodkiestudio@gmail.com</a></li>

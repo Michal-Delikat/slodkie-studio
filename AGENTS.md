@@ -10,7 +10,9 @@ Język treści i komunikacji: polski.
 - Podgląd: `npx serve .`. Nie uruchamiaj buildu ani testów.
 
 # Style
-- Kolory, fonty i grubości bierz wyłącznie ze zmiennych (--color-*, --ff-*, --fw-*). Nie wpisuj wartości na sztywno.
+- Kolory, fonty, grubości, rozmiary czcionek i letter-spacing bierz wyłącznie ze zmiennych (--color-*, --ff-*, --fw-*, --fs-*, --tracking-*). Nie wpisuj wartości na sztywno.
+- Rozmiary czcionek w tokenach `--fs-*` zapisuj jako stałe `px`; `clamp()` stosuj tylko do nagłówków. Nie używaj `rem`; najmniejszy stały rozmiar to `--fs-body` (16px).
+- Wszystkie `h1` używają `--fs-h1`, `h2` — `--fs-h2`, a `h3` — `--fs-h3` (każdy kolejny mniejszy).
 - Rozmiary czcionek w tym projekcie są responsywne (`clamp()`), trzymaj się tego.
 - Zmieniając element, sprawdź jego reguły w blokach `@media` i `prefers-reduced-motion` w tym samym pliku CSS, bo mogą nadpisywać zmianę.
 - Po zmianie układu usuń style, które przestały być potrzebne (np. `align-self` dla elementu, który wyszedł z gridu).

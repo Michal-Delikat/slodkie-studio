@@ -38,8 +38,8 @@
 .ss-card-text {
     margin: 0 1.25rem 1.5rem;
     font-family: var(--ff-primary);
-    font-size: 15px;
-    font-weight: var(--fw-body);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
     line-height: 1.7;
     color: var(--color-text-muted);
 }
@@ -87,7 +87,7 @@
 .ss-gallery-item figcaption {
     margin-top: 0.75rem;
     font-family: var(--ff-primary);
-    font-size: 13px;
+    font-size: var(--fs-body);
     line-height: 1.5;
     color: var(--color-text-muted);
 }

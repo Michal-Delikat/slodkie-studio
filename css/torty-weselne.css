@@ -25,12 +25,12 @@
 }
 
 .tw-hero-title {
+    font-size: var(--fs-h1);
     margin: 0 0 clamp(1.25rem, 2.5vw, 1.75rem);
     font-family: var(--ff-secondary);
-    font-size: clamp(40px, 11vw, 64px);
-    font-weight: 500;
+    font-weight: var(--fw-regular);
     line-height: 1.03;
-    letter-spacing: 0.005em;
+    letter-spacing: var(--tracking-tight);
     color: var(--color-text);
 }
 
@@ -75,7 +75,7 @@
 
 .tw-row dt {
     font-family: var(--ff-primary);
-    font-size: 13px;
+    font-size: var(--fs-body);
     line-height: 1.5;
     color: var(--color-text-muted);
 }
@@ -83,8 +83,8 @@
 .tw-row dd {
     margin: 0;
     font-family: var(--ff-primary);
-    font-size: 13px;
-    font-weight: 400;
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
     line-height: 1.5;
     color: var(--color-text);
     text-align: right;
@@ -120,7 +120,7 @@
     width: 100%;
     border-collapse: collapse;
     font-family: var(--ff-primary);
-    font-size: 15px;
+    font-size: var(--fs-body);
 }
 
 .tw-table th,
@@ -132,8 +132,8 @@
 
 .tw-table thead th {
     font-family: var(--ff-secondary);
-    font-size: 1.25rem;
-    font-weight: 500;
+    font-size: var(--fs-body-large);
+    font-weight: var(--fw-regular);
     color: var(--color-text);
 }
 
@@ -164,10 +164,6 @@
     .tw-hero-content {
         max-width: 560px;
         padding: clamp(2rem, 3.5vw, 3.5rem) 0;
-    }
-
-    .tw-hero-title {
-        font-size: clamp(40px, 4.5vw, 64px);
     }
 
     .tw-hero-media {

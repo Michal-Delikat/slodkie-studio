@@ -73,7 +73,7 @@ body {
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
     font-family: var(--ff-primary);
-    font-weight: var(--fw-body);
+    font-weight: var(--fw-regular);
     background-color: var(--color-bg);
 }
 
@@ -108,8 +108,8 @@ button {
 
 .button {
     font-family: var(--ff-primary);
-    font-size: 1rem;
-    letter-spacing: 0.08em;
+    font-size: var(--fs-body);
+    letter-spacing: var(--tracking-wide);
     text-transform: uppercase;
     cursor: pointer;
     padding: 0.75rem 1.5rem;
@@ -126,11 +126,12 @@ button {
     justify-content: center;
     gap: 0.5rem;
     font-family: var(--ff-primary);
-    font-size: 12px;
-    font-weight: 400;
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
     line-height: 1;
-    letter-spacing: 0.15em;
+    letter-spacing: var(--tracking-wide);
     text-transform: uppercase;
+    white-space: nowrap;
     padding: 0.85rem 1.6rem;
     border: 1px solid var(--color-accent);
     border-radius: 999px;
@@ -199,10 +200,10 @@ button {
 }
 
 .sub-section-title {
+    font-size: var(--fs-h3);
     font-family: var(--ff-secondary);
-    font-size: 1.5rem;
-    font-weight: var(--fw-body);
-    letter-spacing: 0.06em;
+    font-weight: var(--fw-regular);
+    letter-spacing: var(--tracking-tight);
     color: var(--color-brand);
     margin-bottom: 1rem;
 }
@@ -258,8 +259,8 @@ button {
     max-width: 34ch;
     margin: 0 0 1.25rem;
     font-family: var(--ff-primary);
-    font-size: 15px;
-    font-weight: var(--fw-body);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
     line-height: 1.7;
     color: var(--color-text-inverse);
 }
@@ -278,8 +279,8 @@ button {
     gap: 0.6rem;
     min-height: 44px;
     font-family: var(--ff-primary);
-    font-size: 15px;
-    font-weight: 400;
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
     line-height: 1.4;
     color: var(--color-text-inverse);
     transition: color 0.2s ease;
@@ -309,10 +310,10 @@ button {
 }
 
 .footer-heading {
+    font-size: var(--fs-body-large);
     margin: 0 0 0.5rem;
     font-family: var(--ff-secondary);
-    font-size: 1.375rem;
-    font-weight: 500;
+    font-weight: var(--fw-regular);
     line-height: 1.2;
     color: var(--color-accent-inverse);
 }
@@ -331,8 +332,8 @@ button {
     align-items: center;
     min-height: 44px;
     font-family: var(--ff-primary);
-    font-size: 15px;
-    font-weight: 400;
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
     line-height: 1.4;
     color: var(--color-text-inverse);
     transition: color 0.2s ease;
@@ -349,8 +350,8 @@ button {
     align-items: center;
     min-height: 44px;
     font-family: var(--ff-primary);
-    font-size: 15px;
-    font-weight: 400;
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
     line-height: 1.4;
     color: var(--color-text-inverse);
     transition: color 0.2s ease;
@@ -370,8 +371,8 @@ button {
 .footer-bottom p {
     margin: 0;
     font-family: var(--ff-primary);
-    font-size: 13px;
-    letter-spacing: 0.04em;
+    font-size: var(--fs-body);
+    letter-spacing: var(--tracking-normal);
     color: var(--color-accent-inverse);
 }
 
@@ -420,20 +421,20 @@ button {
 .ss-eyebrow {
     margin: 0 0 clamp(1rem, 2vw, 1.5rem);
     font-family: var(--ff-primary);
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 0.22em;
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
+    letter-spacing: var(--tracking-wide);
     text-transform: uppercase;
     color: var(--color-text-muted);
 }
 
 .ss-hero-title {
+    font-size: var(--fs-h1);
     margin: 0 0 clamp(1.25rem, 2.5vw, 2rem);
     font-family: var(--ff-secondary);
-    font-size: clamp(40px, 11vw, 64px);
-    font-weight: 500;
+    font-weight: var(--fw-regular);
     line-height: 1.03;
-    letter-spacing: 0.005em;
+    letter-spacing: var(--tracking-tight);
     color: var(--color-text);
 }
 
@@ -441,8 +442,8 @@ button {
     max-width: 44ch;
     margin: 0 0 clamp(1.75rem, 3vw, 2.5rem);
     font-family: var(--ff-primary);
-    font-size: 17px;
-    font-weight: var(--fw-body);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
     line-height: 1.7;
     color: var(--color-text-muted);
 }
@@ -460,12 +461,12 @@ button {
 }
 
 .ss-title {
+    font-size: var(--fs-h2);
     margin: 0 0 clamp(1.5rem, 3vw, 2.25rem);
     font-family: var(--ff-secondary);
-    font-size: clamp(36px, 4.5vw, 64px);
-    font-weight: 500;
+    font-weight: var(--fw-regular);
     line-height: 1.08;
-    letter-spacing: 0.005em;
+    letter-spacing: var(--tracking-tight);
     color: var(--color-text);
 }
 
@@ -473,8 +474,8 @@ button {
     max-width: 65ch;
     margin: 0 0 1.5rem;
     font-family: var(--ff-primary);
-    font-size: 17px;
-    font-weight: var(--fw-body);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
     line-height: 1.7;
     color: var(--color-text-muted);
 }
@@ -483,7 +484,7 @@ button {
     max-width: 70ch;
     margin: 0;
     font-family: var(--ff-primary);
-    font-size: 14px;
+    font-size: var(--fs-body);
     line-height: 1.6;
     color: var(--color-text-muted);
 }
@@ -524,10 +525,10 @@ button {
 }
 
 .ss-card-title {
+    font-size: var(--fs-h3);
     margin: 1rem 1.25rem 0.35rem;
     font-family: var(--ff-secondary);
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: var(--fw-regular);
     line-height: 1.2;
     color: var(--color-text);
 }
@@ -545,10 +546,10 @@ button {
 }
 
 .ss-taste-card-title {
+    font-size: var(--fs-h3);
     margin: 0;
     font-family: var(--ff-secondary);
-    font-size: clamp(20px, 2vw, 26px);
-    font-weight: 500;
+    font-weight: var(--fw-regular);
     line-height: 1.2;
     color: var(--color-text);
 }
@@ -570,8 +571,8 @@ button {
     padding: 1.1rem 0;
     cursor: pointer;
     font-family: var(--ff-primary);
-    font-size: 17px;
-    font-weight: 400;
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
     line-height: 1.4;
     color: var(--color-text);
     list-style: none;
@@ -584,7 +585,7 @@ button {
 .ss-faq-question::after {
     content: "+";
     font-family: var(--ff-secondary);
-    font-size: 1.5rem;
+    font-size: var(--fs-body-large);
     line-height: 1;
     color: var(--color-text-muted);
 }
@@ -606,8 +607,8 @@ button {
     max-width: 70ch;
     margin: 0;
     font-family: var(--ff-primary);
-    font-size: 15px;
-    font-weight: var(--fw-body);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
     line-height: 1.7;
     color: var(--color-text-muted);
 }
@@ -642,11 +643,6 @@ button {
     }
 }
 
-@media (min-width: 900px) {
-    .ss-hero-title {
-        font-size: clamp(48px, 5vw, 72px);
-    }
-}
 
 @media (min-width: 1100px) {
     .ss-cards {
@@ -686,7 +682,7 @@ button {
 
 .inner-header {
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
     gap: 1.5rem;
     width: 100%;
@@ -724,7 +720,7 @@ button {
 .nav-list {
     display: flex;
     align-items: center;
-    gap: clamp(1.25rem, 3vw, 2.5rem);
+    gap: clamp(1rem, 2vw, 2rem);
     margin: 0;
     padding: 0;
     list-style: none;
@@ -733,9 +729,9 @@ button {
 .nav-list a {
     display: inline-block;
     font-family: var(--ff-primary);
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 0.15em;
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
+    letter-spacing: var(--tracking-wide);
     text-transform: uppercase;
     color: var(--color-text);
     transition: color 0.2s ease;
@@ -808,6 +804,21 @@ button {
     outline-offset: 2px;
 }
 
+@media (min-width: 900px) and (max-width: 1249px) {
+    .inner-header {
+        gap: 0.75rem;
+        padding: 0 16px;
+    }
+
+    .nav-list {
+        gap: 0.5rem;
+    }
+
+    .header-cta {
+        letter-spacing: var(--tracking-wide);
+    }
+}
+
 /* Mobile */
 
 @media (max-width: 899px) {
@@ -866,7 +877,7 @@ button {
     .nav-list a {
         display: block;
         padding: 1rem 0;
-        font-size: 13px;
+        font-size: var(--fs-body);
     }
 
     .nav-cta {
@@ -883,8 +894,8 @@ button {
         justify-content: center;
         width: 100%;
         padding: 0.85rem 1.6rem;
-        font-size: 12px;
-        letter-spacing: 0.15em;
+        font-size: var(--fs-body);
+        letter-spacing: var(--tracking-wide);
     }
 
     .nav-list .nav-cta-link:hover,
@@ -919,20 +930,20 @@ button {
 .offer-eyebrow {
     margin: 0 0 clamp(1rem, 2vw, 1.5rem);
     font-family: var(--ff-primary);
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 0.22em;
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
+    letter-spacing: var(--tracking-wide);
     text-transform: uppercase;
     color: var(--color-text-muted);
 }
 
 .offer-title {
+    font-size: var(--fs-h2);
     margin: 0 0 clamp(2rem, 4vw, 3rem);
     font-family: var(--ff-secondary);
-    font-size: clamp(36px, 4.5vw, 64px);
-    font-weight: 500;
+    font-weight: var(--fw-regular);
     line-height: 1.05;
-    letter-spacing: 0.005em;
+    letter-spacing: var(--tracking-tight);
     color: var(--color-text);
 }
 
@@ -963,10 +974,10 @@ button {
 }
 
 .offer-item-title {
+    font-size: var(--fs-h3);
     margin: 0;
     font-family: var(--ff-secondary);
-    font-size: clamp(26px, 3vw, 38px);
-    font-weight: 500;
+    font-weight: var(--fw-regular);
     line-height: 1.1;
     color: var(--color-text);
 }
@@ -984,8 +995,8 @@ button {
     max-width: 46ch;
     margin: 0.6rem 0 0;
     font-family: var(--ff-primary);
-    font-size: 16px;
-    font-weight: var(--fw-body);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
     line-height: 1.7;
     color: var(--color-text-muted);
 }
@@ -996,8 +1007,8 @@ button {
     gap: 0.4em;
     margin-top: 1rem;
     font-family: var(--ff-primary);
-    font-size: 16px;
-    font-weight: var(--fw-body);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
     color: var(--color-accent);
     transition: transform 0.2s ease;
 }
@@ -1008,7 +1019,7 @@ button {
 
 .offer-arrow {
     font-family: var(--ff-secondary);
-    font-size: clamp(22px, 2vw, 28px);
+    font-size: var(--fs-body-large);
     line-height: 1;
     color: var(--color-accent);
 }
@@ -1092,20 +1103,20 @@ button {
 .process-eyebrow {
     margin: 0 0 clamp(1rem, 2vw, 1.5rem);
     font-family: var(--ff-primary);
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 0.22em;
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
+    letter-spacing: var(--tracking-wide);
     text-transform: uppercase;
     color: var(--color-text-muted);
 }
 
 .process-title {
+    font-size: var(--fs-h2);
     margin: 0;
     font-family: var(--ff-secondary);
-    font-size: clamp(36px, 4.5vw, 64px);
-    font-weight: 500;
+    font-weight: var(--fw-regular);
     line-height: 1.05;
-    letter-spacing: 0.005em;
+    letter-spacing: var(--tracking-tight);
     color: var(--color-text);
 }
 
@@ -1128,31 +1139,22 @@ button {
     border-radius: 16px;
 }
 
-.process-step-number {
-    display: block;
-    margin-bottom: 0.75rem;
-    font-family: var(--ff-secondary);
-    font-size: 2rem;
-    line-height: 1;
-    color: var(--color-text-muted);
-}
-
 .process-step-title {
+    font-size: var(--fs-h3);
     margin: 0 0 0.5rem;
     font-family: var(--ff-secondary);
-    font-size: 1.5rem;
-    font-weight: var(--fw-body);
-    letter-spacing: 0.06em;
-    color: var(--color-brand);
+    font-weight: var(--fw-regular);
+    letter-spacing: var(--tracking-tight);
+    color: var(--color-text);
 }
 
 .process-step-text {
     margin: 0;
-    font-size: 16px;
-    font-weight: var(--fw-body);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
     line-height: 1.7;
-    letter-spacing: 0.01em;
-    color: var(--color-brand);
+    letter-spacing: var(--tracking-normal);
+    color: var(--color-text-muted);
 }
 
 @media (min-width: 768px) {
@@ -1184,20 +1186,20 @@ button {
 .contact-eyebrow {
     margin: 0 0 clamp(1rem, 2vw, 1.5rem);
     font-family: var(--ff-primary);
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 0.22em;
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
+    letter-spacing: var(--tracking-wide);
     text-transform: uppercase;
     color: var(--color-text-muted);
 }
 
 .contact-title {
+    font-size: var(--fs-h2);
     margin: 0 0 clamp(1.5rem, 3vw, 2.25rem);
     font-family: var(--ff-secondary);
-    font-size: clamp(36px, 4.5vw, 64px);
-    font-weight: 500;
+    font-weight: var(--fw-regular);
     line-height: 1.05;
-    letter-spacing: 0.005em;
+    letter-spacing: var(--tracking-tight);
     color: var(--color-text);
 }
 
@@ -1205,8 +1207,8 @@ button {
     max-width: 52ch;
     margin: 0 0 clamp(1.75rem, 3vw, 2.5rem);
     font-family: var(--ff-primary);
-    font-size: 17px;
-    font-weight: var(--fw-body);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
     line-height: 1.7;
     color: var(--color-text-muted);
 }
@@ -1226,9 +1228,9 @@ button {
 
 .contact-label {
     font-family: var(--ff-primary);
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 0.22em;
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
+    letter-spacing: var(--tracking-wide);
     text-transform: uppercase;
     color: var(--color-text-muted);
 }
@@ -1236,8 +1238,8 @@ button {
 .contact-value {
     margin: 0;
     font-family: var(--ff-secondary);
-    font-size: clamp(20px, 2.5vw, 28px);
-    font-weight: 500;
+    font-size: var(--fs-body-large);
+    font-weight: var(--fw-regular);
     line-height: 1.2;
     font-variant-numeric: oldstyle-nums;
     color: var(--color-text);
@@ -1271,12 +1273,12 @@ button {
 }
 
 .reviews-title {
+    font-size: var(--fs-h2);
     margin: 0;
     font-family: var(--ff-secondary);
-    font-size: clamp(36px, 4.5vw, 64px);
-    font-weight: 500;
+    font-weight: var(--fw-regular);
     line-height: 1.05;
-    letter-spacing: 0.005em;
+    letter-spacing: var(--tracking-tight);
     color: var(--color-text);
 }
 
@@ -1288,7 +1290,7 @@ button {
     gap: 0.25rem;
     margin: 0 0 clamp(1.75rem, 3vw, 2.5rem);
     font-family: var(--ff-primary);
-    font-size: 15px;
+    font-size: var(--fs-body);
     line-height: 1.6;
     color: var(--color-text-muted);
 }
@@ -1308,7 +1310,7 @@ button {
 }
 
 .reviews-stat {
-    font-weight: 500;
+    font-weight: var(--fw-regular);
     color: var(--color-text);
 }
 
@@ -1342,8 +1344,8 @@ button {
     margin: 0;
     font-family: var(--ff-secondary);
     font-style: italic;
-    font-weight: 400;
-    font-size: clamp(22px, 1.6vw, 24px);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-body-large);
     line-height: 1.45;
     color: var(--color-text);
 }
@@ -1358,14 +1360,14 @@ button {
 
 .review-author {
     font-family: var(--ff-primary);
-    font-size: 14px;
-    font-weight: 400;
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
     color: var(--color-text-muted);
 }
 
 .review-detail {
     font-family: var(--ff-primary);
-    font-size: 13px;
+    font-size: var(--fs-body);
     color: var(--color-text-muted);
 }
 
@@ -1375,8 +1377,8 @@ button {
     display: inline-block;
     margin-top: clamp(2rem, 4vw, 3rem);
     font-family: var(--ff-primary);
-    font-size: 14px;
-    letter-spacing: 0.04em;
+    font-size: var(--fs-body);
+    letter-spacing: var(--tracking-normal);
     color: var(--color-text);
     text-decoration: underline;
     text-underline-offset: 4px;
