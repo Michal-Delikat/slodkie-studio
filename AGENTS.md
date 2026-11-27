@@ -21,10 +21,10 @@ Język treści i komunikacji: polski.
 Kolejność definicji i zasady:
 1. `--brand-*` — surowe kolory marki (HEX z logo).
 2. Nazwy potoczne kolorów — `--pink`, `--brown`, `--beige`, `--black`, `--gray`; mogą wskazywać na `--brand-*`.
-3. Tokeny przypadków użycia — `--color-bg`, `--color-surface`, `--color-text`, `--color-text-muted`, `--color-accent`, `--color-brand`, `--color-inverse-surface`, `--color-text-inverse`, `--color-accent-inverse`, `--color-line`, `--color-line-inverse`, `--color-surface-muted`, `--color-stripe`, `--color-on-accent`; odwołują się wyłącznie do nazw potocznych.
+3. Tokeny przypadków użycia — `--color-bg`, `--color-surface`, `--color-text`, `--color-text-muted`, `--color-accent`, `--color-brand`, `--color-inverse-surface`, `--color-text-inverse`, `--color-accent-inverse`, `--color-line`, `--color-line-inverse`, `--color-surface-muted`, `--color-stripe`, `--color-on-accent`, `--color-border-light`; odwołują się wyłącznie do nazw potocznych.
 4. W klasach CSS używaj wyłącznie tokenów przypadków użycia (`var(--color-*)`). Nie wpisuj w klasach `--brand-*`, nazw potocznych ani wartości HEX.
 
-Róż jest bazowym tłem strony (`--color-bg` = `--pink`). Karty i panele korzystają z `--color-surface` (beż). Wyjątek: `--color-on-accent` ma bezpośrednio `#FFFFFF` — biały jest używany wyłącznie na tekście przycisku `.btn-solid`.
+Róż jest bazowym tłem strony (`--color-bg` = `--pink`). Karty i panele korzystają z `--color-surface` (beż). Wyjątek: `--color-on-accent` ma bezpośrednio `#FFFFFF` — biały jest używany wyłącznie na tekście przycisku `.btn-solid`. Skrót `--border-light` (pełny border) jest zdefiniowany w sekcji Borders, poza przypadkami użycia kolorów.
 
 # Karty i linki
 - Klikalny jest zwykle link na tytule, rozciągnięty na całą kartę. Dodając element wyglądający jak przycisk, upewnij się, że jest klikalny: albo mieści się w rozciągniętym linku, albo sam jest linkiem.

@@ -18,7 +18,7 @@
     --color-surface: var(--beige);
     --color-text: var(--black);
     --color-text-muted: var(--gray);
-    --color-accent: var(--black);
+    --color-accent: var(--brown);
     --color-brand: var(--brown);
     --color-inverse-surface: var(--brown);
     --color-text-inverse: var(--beige);
@@ -28,7 +28,10 @@
     --color-surface-muted: color-mix(in srgb, var(--black) 5%, var(--beige));
     --color-stripe: color-mix(in srgb, var(--black) 3%, transparent);
     --color-on-accent: var(--white);
-    --border: 1px solid color-mix(in srgb, var(--brown) 20%, transparent);
+    --color-border-light: color-mix(in srgb, var(--brown) 20%, transparent);
+
+    /* Borders */
+    --border-light: 2px solid var(--color-border-light);
 
     /* Typography */
 
