@@ -1137,9 +1137,21 @@ button {
     color: var(--color-text-muted);
 }
 
+@media (min-width: 640px) {
+    .process-steps--four {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
 @media (min-width: 768px) {
-    .process-steps {
+    .process-steps--three {
         grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1300px) {
+    .process-steps--four {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 }
 
