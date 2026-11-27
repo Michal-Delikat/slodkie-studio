@@ -927,16 +927,6 @@ button {
 
 /* Headings */
 
-.offer-eyebrow {
-    margin: 0 0 clamp(1rem, 2vw, 1.5rem);
-    font-family: var(--ff-primary);
-    font-size: var(--fs-body);
-    font-weight: var(--fw-regular);
-    letter-spacing: var(--tracking-wide);
-    text-transform: uppercase;
-    color: var(--color-text-muted);
-}
-
 .offer-title {
     font-size: var(--fs-h2);
     margin: 0 0 clamp(2rem, 4vw, 3rem);
@@ -1100,16 +1090,6 @@ button {
     margin-bottom: clamp(2rem, 4vw, 3rem);
 }
 
-.process-eyebrow {
-    margin: 0 0 clamp(1rem, 2vw, 1.5rem);
-    font-family: var(--ff-primary);
-    font-size: var(--fs-body);
-    font-weight: var(--fw-regular);
-    letter-spacing: var(--tracking-wide);
-    text-transform: uppercase;
-    color: var(--color-text-muted);
-}
-
 .process-title {
     font-size: var(--fs-h2);
     margin: 0;
@@ -1181,16 +1161,6 @@ button {
     max-width: var(--max-width);
     margin: 0 auto;
     padding: 0 24px;
-}
-
-.contact-eyebrow {
-    margin: 0 0 clamp(1rem, 2vw, 1.5rem);
-    font-family: var(--ff-primary);
-    font-size: var(--fs-body);
-    font-weight: var(--fw-regular);
-    letter-spacing: var(--tracking-wide);
-    text-transform: uppercase;
-    color: var(--color-text-muted);
 }
 
 .contact-title {

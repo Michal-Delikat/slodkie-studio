@@ -175,16 +175,6 @@
 
 /* Content */
 
-.about-eyebrow {
-    margin: -4px 0 clamp(1rem, 2vw, 1.5rem);
-    font-family: var(--ff-primary);
-    font-size: var(--fs-body);
-    font-weight: var(--fw-regular);
-    letter-spacing: var(--tracking-wide);
-    text-transform: uppercase;
-    color: var(--color-text-muted);
-}
-
 .about-title {
     font-size: var(--fs-h2);
     margin: 0 0 clamp(1.5rem, 3vw, 2.25rem);
@@ -299,14 +289,4 @@
     }
 }
 
-/* Reviews eyebrow (home page only) */
 
-.reviews-eyebrow {
-    margin: 0 0 clamp(1rem, 2vw, 1.5rem);
-    font-family: var(--ff-primary);
-    font-size: var(--fs-body);
-    font-weight: var(--fw-regular);
-    letter-spacing: var(--tracking-wide);
-    text-transform: uppercase;
-    color: var(--color-text-muted);
-}

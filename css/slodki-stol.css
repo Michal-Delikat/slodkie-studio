@@ -17,6 +17,8 @@
 
 .ss-hero-media {
     width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
     height: clamp(280px, 50vh, 720px);
     overflow: hidden;
 }
